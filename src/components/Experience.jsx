@@ -1,7 +1,45 @@
+import { useEffect, useState } from 'react';
 import { Briefcase, Calendar, MapPin } from 'lucide-react';
-import { experience } from '../data/experience';
+import { experience as defaultExperience } from '../data/experience';
+import { fetchExperiences } from '../utils/api';
 
 export default function Experience() {
+  const [experienceData, setExperienceData] = useState(defaultExperience);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const loadExperience = async () => {
+      try {
+        setLoading(true);
+        const result = await fetchExperiences();
+        if (Array.isArray(result) && result.length) {
+          setExperienceData(result);
+        }
+        setError(null);
+      } catch (err) {
+        setError(err.message || 'Failed to load experience');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadExperience();
+  }, []);
+
+  if (loading) {
+    return (
+      <section id="experience" className="section experience-section">
+        <h2 className="section-title">Professional Journey</h2>
+        <p className="section-subtitle">
+          A chronological overview of my professional engineering milestones,
+          organizational achievements, and technical contributions.
+        </p>
+        <p style={{ textAlign: 'center', color: 'var(--text-muted)' }}>Loading experience...</p>
+      </section>
+    );
+  }
+
   return (
     <section id="experience" className="section experience-section">
       <h2 className="section-title">Professional Journey</h2>
@@ -10,11 +48,17 @@ export default function Experience() {
         organizational achievements, and technical contributions.
       </p>
 
+      {error && (
+        <p style={{ textAlign: 'center', color: 'var(--danger)', marginBottom: '1rem' }}>
+          Could not load experience from the API. Showing default experience.
+        </p>
+      )}
+
       <div className="timeline-container">
         <div className="timeline-center-line" />
-        {experience.map((item, index) => (
+        {experienceData.map((item, index) => (
           <div
-            key={item.company}
+            key={item.id ?? item.company ?? item.role ?? index}
             className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`}
           >
             <div className="timeline-node">
@@ -34,8 +78,8 @@ export default function Experience() {
               <h3 className="timeline-role">{item.role}</h3>
               <h4 className="timeline-company">{item.company}</h4>
               <ul className="timeline-bullet-list">
-                {item.bullets.map((bullet) => (
-                  <li key={bullet} className="timeline-bullet-item">
+                {item.bullets.map((bullet, bulletIndex) => (
+                  <li key={`${bullet}-${bulletIndex}`} className="timeline-bullet-item">
                     {bullet}
                   </li>
                 ))}

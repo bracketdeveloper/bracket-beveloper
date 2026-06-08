@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import {
   AlertTriangle,
   ExternalLink,
@@ -7,27 +7,126 @@ import {
   Target,
   X,
 } from 'lucide-react';
-import { projects } from '../data/projects';
+import { projects as defaultProjects } from '../data/projects';
+import { fetchProjects } from '../utils/api';
 
-const filters = [
-  { id: 'all', label: 'Show All' },
-  { id: 'fullstack', label: 'Full Stack' },
-  { id: 'frontend', label: 'Frontend' },
-];
+const categoryLabels = {
+  all: 'Show All',
+  fullstack: 'Full Stack',
+  frontend: 'Frontend',
+  backend: 'Backend',
+};
+
+function getProjectFilters(projects) {
+  const categories = [...new Set(projects.map((project) => (project.category || 'other').toString().toLowerCase()))];
+  const ordered = categories.sort((a, b) => {
+    if (a === 'fullstack') return -1;
+    if (b === 'fullstack') return 1;
+    return a.localeCompare(b);
+  });
+
+  return [
+    { id: 'all', label: categoryLabels.all },
+    ...ordered.map((category) => ({
+      id: category,
+      label: categoryLabels[category] ?? category.charAt(0).toUpperCase() + category.slice(1),
+    })),
+  ];
+}
+
+function normalizeProjectsData(payload) {
+  const data = payload?.data ?? payload;
+  const rawProjects = data?.projects ?? data;
+
+  if (!Array.isArray(rawProjects)) {
+    return null;
+  }
+
+  return rawProjects.map((project) => {
+    const category = (project.category || project.type || 'fullstack').toString().toLowerCase();
+    const tech = Array.isArray(project.tech)
+      ? project.tech
+      : Array.isArray(project.technologies)
+      ? project.technologies
+      : [];
+
+    const links = {
+      github: project.links?.github ?? project.github ?? '',
+      demo: project.links?.demo ?? project.demo ?? '',
+    };
+
+    const caseStudy = {
+      challenge: project.caseStudy?.challenge ?? project.challenge ?? '',
+      solution: project.caseStudy?.solution ?? project.solution ?? '',
+      metrics: project.caseStudy?.metrics ?? project.metrics ?? '',
+    };
+
+    return {
+      id: project._id ?? project.id ?? project.title ?? `${category}-${Math.random()}`,
+      title: project.title ?? 'Untitled Project',
+      category,
+      description: project.description ?? project.summary ?? '',
+      tech,
+      links,
+      caseStudy,
+    };
+  });
+}
 
 export default function Projects() {
   const [filter, setFilter] = useState('all');
   const [modalProject, setModalProject] = useState(null);
+  const [projects, setProjects] = useState(defaultProjects);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const loadProjects = async () => {
+      try {
+        setLoading(true);
+        const result = await fetchProjects();
+        const normalized = normalizeProjectsData(result);
+
+        if (normalized && normalized.length) {
+          setProjects(normalized);
+        }
+
+        setError(null);
+      } catch (err) {
+        setError(err.message || 'Failed to load projects');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadProjects();
+  }, []);
+
+  const filters = useMemo(() => getProjectFilters(projects), [projects]);
 
   const filtered = useMemo(() => {
     const list =
       filter === 'all'
-        ? [...projects].sort((a, b) =>
-            a.category === 'fullstack' ? -1 : b.category === 'fullstack' ? 1 : 0
-          )
+        ? [...projects]
         : projects.filter((p) => p.category === filter);
-    return list;
-  }, [filter]);
+
+    return list.sort((a, b) =>
+      a.category === 'fullstack' ? -1 : b.category === 'fullstack' ? 1 : 0
+    );
+  }, [filter, projects]);
+
+  if (loading) {
+    return (
+      <section id="projects" className="section projects-section">
+        <h2 className="section-title">Selected Projects</h2>
+        <p className="section-subtitle">
+          A curated collection of full-stack engineering applications built with
+          optimal performance and clean design.
+        </p>
+        <p style={{ textAlign: 'center', color: 'var(--text-muted)' }}>Loading projects...</p>
+      </section>
+    );
+  }
 
   return (
     <section id="projects" className="section projects-section">
@@ -36,6 +135,12 @@ export default function Projects() {
         A curated collection of full-stack engineering applications built with
         optimal performance and clean design.
       </p>
+
+      {error && (
+        <p style={{ textAlign: 'center', color: 'var(--danger)', marginBottom: '1rem' }}>
+          Could not load projects from the API. Showing default projects.
+        </p>
+      )}
 
       <div className="filter-nav">
         {filters.map((f) => (
