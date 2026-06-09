@@ -1,11 +1,34 @@
-const API_URL =
-  import.meta.env.VITE_API_URL ||
-  'https://portfolio-vercel-deployment-nine.vercel.app/api/v1/portfolio';
+function getApiUrl(envValue, fallbackUrl) {
+  const isRelative = typeof envValue === 'string' && envValue.startsWith('/');
+
+  if (import.meta.env.DEV) {
+    return envValue || '/api/portfolio';
+  }
+
+  return !isRelative && envValue ? envValue : fallbackUrl;
+}
+
+const API_URL = getApiUrl(
+  import.meta.env.VITE_API_URL,
+  'https://portfolio-vercel-deployment-nine.vercel.app/api/v1/portfolio'
+);
 const API_KEY = import.meta.env.VITE_ADMIN_API_KEY;
-const SKILLS_API_URL = import.meta.env.VITE_SKILLS_API_URL || `${API_URL}/skills`;
-const PROJECTS_API_URL = import.meta.env.VITE_PROJECTS_API_URL || `${API_URL}/projects`;
-const EXPERIENCES_API_URL = import.meta.env.VITE_EXPERIENCES_API_URL || `${API_URL}/experiences`;
-const CONTACT_API_URL = import.meta.env.VITE_CONTACT_API_URL || `${API_URL}/contact`;
+const SKILLS_API_URL = getApiUrl(
+  import.meta.env.VITE_SKILLS_API_URL,
+  `${API_URL}/skills`
+);
+const PROJECTS_API_URL = getApiUrl(
+  import.meta.env.VITE_PROJECTS_API_URL,
+  `${API_URL}/projects`
+);
+const EXPERIENCES_API_URL = getApiUrl(
+  import.meta.env.VITE_EXPERIENCES_API_URL,
+  `${API_URL}/experiences`
+);
+const CONTACT_API_URL = getApiUrl(
+  import.meta.env.VITE_CONTACT_API_URL,
+  `${API_URL}/contact`
+);
 
 export async function fetchAbout() {
   try {
