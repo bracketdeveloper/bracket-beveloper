@@ -3,6 +3,7 @@ const API_KEY = import.meta.env.VITE_ADMIN_API_KEY;
 const SKILLS_API_URL = import.meta.env.VITE_SKILLS_API_URL || 'https://portfolio-bice-gamma-80.vercel.app/api/v1/portfolio/skills';
 const PROJECTS_API_URL = import.meta.env.VITE_PROJECTS_API_URL || 'https://portfolio-bice-gamma-80.vercel.app/api/v1/portfolio/projects';
 const EXPERIENCES_API_URL = import.meta.env.VITE_EXPERIENCES_API_URL || 'https://portfolio-bice-gamma-80.vercel.app/api/v1/portfolio/experiences';
+const CONTACT_API_URL = import.meta.env.VITE_CONTACT_API_URL || 'https://portfolio-bice-gamma-80.vercel.app/api/v1/portfolio/contact';
 
 export async function fetchAbout() {
   try {
@@ -181,6 +182,56 @@ export async function fetchExperiences() {
     return normalized || json?.data?.experiences || json?.data?.experience || json;
   } catch (error) {
     console.error('Failed to fetch experiences data:', error);
+    throw error;
+  }
+}
+
+function normalizeContactResponse(payload) {
+  const data = payload?.data ?? payload;
+  if (!data) {
+    return null;
+  }
+
+  const contact = data.contact ?? data;
+
+  return {
+    title: contact.title ?? data.title ?? "Let's Connect",
+    description:
+      contact.description ?? data.description ??
+      'I am currently open to contracting opportunities, senior technical roles, or architectural consultancies. Feel free to shoot over a message.',
+    email: contact.email ?? data.email ?? 'mianammarsalar@gmail.com',
+    location: contact.location ?? data.location ?? 'Lahore, Pakistan (Remote Friendly)',
+    socials: Array.isArray(contact.socials)
+      ? contact.socials
+      : Array.isArray(data.socials)
+      ? data.socials
+      : [
+          { name: 'GitHub', url: 'https://github.com/bracketdeveloper' },
+          { name: 'LinkedIn', url: 'https://www.linkedin.com/in/mianammarsalar' },
+        ],
+  };
+}
+
+export async function fetchContact() {
+  const headers = { 'Content-Type': 'application/json' };
+  if (API_KEY) {
+    headers['x-admin-api-key'] = API_KEY;
+  }
+
+  try {
+    const response = await fetch(CONTACT_API_URL, {
+      headers,
+    });
+
+    if (!response.ok) {
+      throw new Error(`API error: ${response.status}`);
+    }
+
+    const json = await response.json();
+    const normalized = normalizeContactResponse(json);
+    return normalized || json?.data?.contact || json;
+  } catch (error) {
+    console.error('Failed to fetch contact data:', error);
     throw error;
   }
 }

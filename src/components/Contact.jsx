@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
   AlertCircle,
   CheckCircle,
@@ -10,10 +10,22 @@ import {
   MapPin,
   Send,
 } from 'lucide-react';
+import { fetchContact } from '../utils/api';
 
-const EMAIL = 'mianammarsalar@gmail.com';
+const defaultContactData = {
+  title: "Let's Connect",
+  description:
+    'I am currently open to contracting opportunities, senior technical roles, or architectural consultancies. Feel free to shoot over a message.',
+  email: 'mianammarsalar@gmail.com',
+  location: 'Lahore, Pakistan (Remote Friendly)',
+  socials: [
+    { name: 'GitHub', url: 'https://github.com/bracketdeveloper' },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/mianammarsalar' },
+  ],
+};
 
 export default function Contact() {
+  const [contactData, setContactData] = useState(defaultContactData);
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' });
   const [errors, setErrors] = useState({});
   const [submitting, setSubmitting] = useState(false);
@@ -21,10 +33,23 @@ export default function Contact() {
   const [copied, setCopied] = useState(false);
 
   const copyEmail = () => {
-    navigator.clipboard.writeText(EMAIL);
+    navigator.clipboard.writeText(contactData.email);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
+
+  useEffect(() => {
+    const loadContact = async () => {
+      try {
+        const result = await fetchContact();
+        setContactData(result);
+      } catch (err) {
+        console.error('Contact API failed:', err);
+      }
+    };
+
+    loadContact();
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -67,11 +92,8 @@ export default function Contact() {
 
       <div className="contact-grid">
         <div className="contact-details-panel glass-card">
-          <h3 className="contact-panel-title">Let&apos;s Connect</h3>
-          <p className="contact-panel-desc">
-            I am currently open to contracting opportunities, senior technical
-            roles, or architectural consultancies. Feel free to shoot over a message.
-          </p>
+          <h3 className="contact-panel-title">{contactData.title}</h3>
+          <p className="contact-panel-desc">{contactData.description}</p>
 
           <div className="contact-items">
             <div className="contact-info-item copyable" onClick={copyEmail} role="presentation">
@@ -80,7 +102,7 @@ export default function Contact() {
               </div>
               <div className="contact-info-text">
                 <span className="info-label">Direct Email</span>
-                <span className="info-val">{EMAIL}</span>
+                <span className="info-val">{contactData.email}</span>
               </div>
               <button type="button" className="copy-btn" aria-label="Copy email address to clipboard">
                 {copied ? <span className="copied-text">Copied!</span> : <Copy size={16} />}
@@ -93,7 +115,7 @@ export default function Contact() {
               </div>
               <div className="contact-info-text">
                 <span className="info-label">Location</span>
-                <span className="info-val">Lahore, Pakistan (Remote Friendly)</span>
+                <span className="info-val">{contactData.location}</span>
               </div>
             </div>
           </div>
@@ -101,24 +123,25 @@ export default function Contact() {
           <div className="contact-socials-group">
             <h4 className="socials-title">Follow My Engineering Work</h4>
             <div className="socials-links">
-              <a
-                href="https://github.com/bracketdeveloper"
-                className="social-icon-btn"
-                aria-label="GitHub Developer Page"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Github size={22} />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/mianammarsalar"
-                className="social-icon-btn"
-                aria-label="LinkedIn Professional Profile"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Linkedin size={22} />
-              </a>
+              {contactData.socials.map((social) => {
+                const icon = social.name.toLowerCase().includes('github') ? (
+                  <Github size={22} />
+                ) : (
+                  <Linkedin size={22} />
+                );
+                return (
+                  <a
+                    key={social.name}
+                    href={social.url}
+                    className="social-icon-btn"
+                    aria-label={social.name}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {icon}
+                  </a>
+                );
+              })}
             </div>
           </div>
         </div>
