@@ -1,0 +1,23 @@
+{
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "rewrites": [
+    {
+      "source": "/api/portfolio/:path*",
+      "destination": "https://portfolio-vercel-deployment-nine.vercel.app/api/v1/portfolio/:path*"
+    },
+    {
+      "source": "/((?!api).*)",
+      "destination": "/index.html"
+    }
+  ],
+  "env": {
+    "VITE_API_URL": "/api/portfolio",
+    "VITE_ADMIN_API_KEY": "@vite-admin-api-key",
+    "VITE_SKILLS_API_URL": "/api/portfolio/skills",
+    "VITE_PROJECTS_API_URL": "/api/portfolio/projects",
+    "VITE_EXPERIENCES_API_URL": "/api/portfolio/experiences",
+    "VITE_CONTACT_API_URL": "/api/portfolio/contact"
+  }
+}
