@@ -16,13 +16,22 @@ const PROJECTS_API_URL = normalizeProductionUrl(import.meta.env.VITE_PROJECTS_AP
 const EXPERIENCES_API_URL = normalizeProductionUrl(import.meta.env.VITE_EXPERIENCES_API_URL, `${API_URL}/experiences`);
 const CONTACT_API_URL = normalizeProductionUrl(import.meta.env.VITE_CONTACT_API_URL, `${API_URL}/contact`);
 
+function createHeaders(includeAdminKey = true) {
+  const headers = {
+    'Content-Type': 'application/json',
+  };
+
+  if (includeAdminKey && import.meta.env.DEV && API_KEY) {
+    headers['x-admin-api-key'] = API_KEY;
+  }
+
+  return headers;
+}
+
 export async function fetchAbout() {
   try {
     const response = await fetch(`${API_URL}/about`, {
-      headers: {
-        'x-admin-api-key': API_KEY,
-        'Content-Type': 'application/json',
-      },
+      headers: createHeaders(),
     });
 
     if (!response.ok) {
@@ -58,14 +67,9 @@ function normalizeSkillsResponse(payload) {
 }
 
 export async function fetchSkills() {
-  const headers = { 'Content-Type': 'application/json' };
-  if (API_KEY) {
-    headers['x-admin-api-key'] = API_KEY;
-  }
-
   try {
     const response = await fetch(SKILLS_API_URL, {
-      headers,
+      headers: createHeaders(),
     });
 
     if (!response.ok) {
@@ -121,14 +125,9 @@ function normalizeProjectsResponse(payload) {
 }
 
 export async function fetchProjects() {
-  const headers = { 'Content-Type': 'application/json' };
-  if (API_KEY) {
-    headers['x-admin-api-key'] = API_KEY;
-  }
-
   try {
     const response = await fetch(PROJECTS_API_URL, {
-      headers,
+      headers: createHeaders(),
     });
 
     if (!response.ok) {
@@ -174,14 +173,9 @@ function normalizeExperienceResponse(payload) {
 }
 
 export async function fetchExperiences() {
-  const headers = { 'Content-Type': 'application/json' };
-  if (API_KEY) {
-    headers['x-admin-api-key'] = API_KEY;
-  }
-
   try {
     const response = await fetch(EXPERIENCES_API_URL, {
-      headers,
+      headers: createHeaders(),
     });
 
     if (!response.ok) {
@@ -224,14 +218,9 @@ function normalizeContactResponse(payload) {
 }
 
 export async function fetchContact() {
-  const headers = { 'Content-Type': 'application/json' };
-  if (API_KEY) {
-    headers['x-admin-api-key'] = API_KEY;
-  }
-
   try {
     const response = await fetch(CONTACT_API_URL, {
-      headers,
+      headers: createHeaders(),
     });
 
     if (!response.ok) {

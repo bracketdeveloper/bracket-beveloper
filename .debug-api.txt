@@ -1,0 +1,2078 @@
+
+dist\assets\index-jAoATFDh.js:450: */const kj=[["path",{d:"M14.7 6.3a1 1 0 0 0 
+0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 
+2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z",key:"cbrjhi"}]],X1=Me
+("wrench",kj),k1=[{name:"Home",href:"#home"},{name:"About",href:"#about"},{name
+:"Skills",href:"#skills"},{name:"Projects",href:"#projects"},{name:"Experience"
+,href:"#experience"},{name:"Contact",href:"#contact"}];function Uj({theme:p,set
+Theme:D}){const[O,E]=ue.useState(!1),[R,H]=ue.useState(!1);ue.useEffect(()=>{co
+nst T=()=>H(window.scrollY>20);return window.addEventListener("scroll",T),()=>w
+indow.removeEventListener("scroll",T)},[]);const 
+Y=()=>D(T=>T==="light"?"dark":"light");return 
+f.jsxDEV("nav",{className:`navbar ${R?"scrolled":""}`,children:[f.jsxDEV("div",
+{className:"navbar-container",children:[f.jsxDEV("a",{href:"#home",className:"n
+av-logo",children:[f.jsxDEV(IN,{size:22,className:"logo-icon"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Navbar.jsx"
+,lineNumber:29,columnNumber:11},this),f.jsxDEV("span",{children:["Bracket",f.js
+xDEV("span",{className:"logo-accent",children:"Developer"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Navbar.jsx"
+,lineNumber:31,columnNumber:20},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Navbar.jsx"
+,lineNumber:30,columnNumber:11},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Navbar.jsx"
+,lineNumber:28,columnNumber:9},this),f.jsxDEV("div",{className:"nav-menu",child
+ren:k1.map(T=>f.jsxDEV("a",{href:T.href,className:"nav-item",children:T.name},T
+.name,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Navbar.
+jsx",lineNumber:37,columnNumber:13},this))},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Navbar.jsx"
+,lineNumber:35,columnNumber:9},this),f.jsxDEV("div",{className:"nav-controls",c
+hildren:[f.jsxDEV("button",{type:"button",onClick:Y,className:"theme-toggle","a
+ria-label":"Toggle visual 
+theme",children:p==="light"?f.jsxDEV(Ej,{size:20},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Navbar.jsx"
+,lineNumber:50,columnNumber:34},this):f.jsxDEV(Rj,{size:20},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Navbar.jsx"
+,lineNumber:50,columnNumber:55},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Navbar.jsx"
+,lineNumber:44,columnNumber:11},this),f.jsxDEV("button",{type:"button",onClick:
+()=>E(!O),className:"mobile-menu-trigger","aria-label":"Toggle navigation 
+drawer",children:O?f.jsxDEV(G1,{size:24},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Navbar.jsx"
+,lineNumber:58,columnNumber:27},this):f.jsxDEV(Sj,{size:24},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Navbar.jsx"
+,lineNumber:58,columnNumber:45},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Navbar.jsx"
+,lineNumber:52,columnNumber:11},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Navbar.jsx"
+,lineNumber:43,columnNumber:9},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Navbar.jsx"
+,lineNumber:27,columnNumber:7},this),f.jsxDEV("div",{className:`mobile-drawer $
+{O?"open":""}`,children:f.jsxDEV("div",{className:"mobile-drawer-links",childre
+n:k1.map(T=>f.jsxDEV("a",{href:T.href,className:"mobile-nav-item",onClick:()=>E
+(!1),children:T.name},T.name,!1,{fileName:"D:/Projects/Cursor/Bracket Developer
+/src/components/Navbar.jsx",lineNumber:66,columnNumber:13},this))},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/components/Navbar.jsx",lineNumber:64,columnNumber:9},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Navbar.jsx"
+,lineNumber:63,columnNumber:7},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/components/Navbar.jsx",lineNumber:26,columnNumber:5},this)}const 
+U1=["Full-Stack Engineer","MERN & Laravel Specialist","Backend 
+Architect","UI/UX Implementer"],Hj=[{className:"badge-left-1",icon:Tj,label:"No
+de.js"},{className:"badge-right-1",icon:w1,label:"React.js"},{className:"badge-
+left-2",icon:cj,label:"Laravel"},{className:"badge-right-2",icon:M1,label:"Vue.
+js"},{className:"badge-left-3",icon:M1,label:"PHP"},{className:"badge-right-3",
+icon:Mh,label:"MySQL"},{className:"badge-left-4",icon:w1,label:"WordPress"},{cl
+assName:"badge-right-4",icon:Mh,label:"MongoDB"}];function Vj(){const[p,D]=ue.u
+seState(0),[O,E]=ue.useState(""),[R,H]=ue.useState(!1),[Y,T]=ue.useState(100);r
+eturn ue.useEffect(()=>{const J=U1[p],be=setTimeout(()=>{if(R){const ce=J.subst
+ring(0,O.length-1);E(ce),ce===""&&(H(!1),D(x=>(x+1)%U1.length),T(100))}else{con
+st ce=J.substring(0,O.length+1);E(ce),ce===J&&setTimeout(()=>H(!0),2e3)}T(R?50:
+100)},Y);return()=>clearTimeout(be)},[O,R,p,Y]),f.jsxDEV("section",{id:"home",c
+lassName:"hero-section",children:[f.jsxDEV("div",{className:"bg-grid"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Hero.jsx",l
+ineNumber:61,columnNumber:7},this),f.jsxDEV("div",{className:"glow-orb 
+orb-1"},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/component
+s/Hero.jsx",lineNumber:62,columnNumber:7},this),f.jsxDEV("div",{className:"glow
+-orb orb-2"},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/comp
+onents/Hero.jsx",lineNumber:63,columnNumber:7},this),f.jsxDEV("div",{className:
+"glow-orb orb-3"},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src
+/components/Hero.jsx",lineNumber:64,columnNumber:7},this),f.jsxDEV("div",{class
+Name:"hero-container",children:[f.jsxDEV("div",{className:"floating-icons-conta
+iner",children:Hj.map(({className:J,icon:be,label:ce})=>f.jsxDEV("div",{classNa
+me:`floating-badge ${J}`,children:[f.jsxDEV(be,{size:18},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Hero.jsx",l
+ineNumber:70,columnNumber:15},this),f.jsxDEV("span",{children:ce},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Hero.jsx",l
+ineNumber:71,columnNumber:15},this)]},ce,!0,{fileName:"D:/Projects/Cursor/Brack
+et 
+Developer/src/components/Hero.jsx",lineNumber:69,columnNumber:13},this))},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Hero.jsx",l
+ineNumber:67,columnNumber:9},this),f.jsxDEV("div",{className:"hero-content",chi
+ldren:[f.jsxDEV("h4",{className:"hero-tagline",children:"DEVELOPING SCALABLE 
+SOLUTIONS"},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/compo
+nents/Hero.jsx",lineNumber:77,columnNumber:11},this),f.jsxDEV("h1",{className:"
+hero-title",children:["Hi, I'm 
+",f.jsxDEV("span",{className:"highlight-text",children:"Mian Ammar 
+Salar"},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/components/Hero.jsx",lineNumber:79,columnNumber:26},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Hero.jsx",l
+ineNumber:78,columnNumber:11},this),f.jsxDEV("h2",{className:"hero-subtitle",ch
+ildren:["I am a ",f.jsxDEV("span",{className:"typed-text",children:O},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Hero.jsx",l
+ineNumber:82,columnNumber:20},this),f.jsxDEV("span",{className:"cursor",childre
+n:"|"},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/components/Hero.jsx",lineNumber:83,columnNumber:13},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Hero.jsx",l
+ineNumber:81,columnNumber:11},this),f.jsxDEV("p",{className:"hero-description",
+children:"I design and architect high-performance full-stack web applications, 
+combining rock-solid backend frameworks like Laravel and Node.js with modern, 
+responsive user interfaces."},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket D
+eveloper/src/components/Hero.jsx",lineNumber:85,columnNumber:11},this),f.jsxDEV
+("div",{className:"hero-actions",children:[f.jsxDEV("a",{href:"#projects",class
+Name:"btn btn-primary",children:"Explore Projects"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Hero.jsx",l
+ineNumber:91,columnNumber:13},this),f.jsxDEV("a",{href:"#contact",className:"bt
+n btn-secondary",children:"Let's Connect"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/components/Hero.jsx",lineNumber:94,columnNumber:13},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/components/Hero.jsx",lineNumber:90,columnNumber:11},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/components/Hero.jsx",lineNumber:76,columnNumber:9},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Hero.jsx",l
+ineNumber:66,columnNumber:7},this),f.jsxDEV("a",{href:"#about",className:"scrol
+l-indicator","aria-label":"Scroll to About Me 
+section",children:f.jsxDEV(GN,{size:22,className:"arrow-icon"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/components/Hero.jsx",lineNumber:102,columnNumber:9},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/components/Hero.jsx",lineNumber:101,columnNumber:7},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Hero.jsx",l
+ineNumber:60,columnNumber:5},this)}function Nr(p,D){return typeof 
+p=="string"&&p.startsWith("/"),p||"/api/portfolio"}const Lj=Nr("https://portfol
+io-vercel-deployment-nine.vercel.app/api/v1/portfolio"),jr="650736dbdd3d57a4328
+1f528751f060abb9276e51162ad84ae05aefdcf30cb89",qj=Nr("https://portfolio-vercel-
+deployment-nine.vercel.app/api/v1/portfolio/skills"),Yj=Nr("https://portfolio-v
+ercel-deployment-nine.vercel.app/api/v1/portfolio/projects"),Gj=Nr("https://por
+tfolio-vercel-deployment-nine.vercel.app/api/v1/portfolio/experiences"),Xj=Nr("
+https://portfolio-vercel-deployment-nine.vercel.app/api/v1/portfolio/contact");
+async function Qj(){try{const p=await fetch(`${Lj}/about`,{headers:{"x-admin-ap
+i-key":jr,"Content-Type":"application/json"}});if(!p.ok)throw new Error(`API 
+error: ${p.status}`);return await p.json()}catch(p){throw 
+console.error("Failed to fetch about data:",p),p}}function $j(p){const 
+D=(p==null?void 0:p.data)??(p==null?void 0:p.skills)??(p==null?void 
+0:p.skillsByCategory)??p;return D?Array.isArray(D)?D.reduce((O,E)=>{const 
+R=(E.category||"frontend").toLowerCase(),H=E.name||E.skill||"Unknown 
+Skill",Y=Number(E.level??E.proficiency??0);return 
+O[R]=O[R]??[],O[R].push({name:H,level:Y}),O},{}):D:null}async function 
+Zj(){const 
+p={"Content-Type":"application/json"};p["x-admin-api-key"]=jr;try{const 
+D=await fetch(qj,{headers:p});if(!D.ok)throw new Error(`API error: 
+${D.status}`);const O=await D.json();return $j(O)||O}catch(D){throw 
+console.error("Failed to fetch skills data:",D),D}}function Jj(p){const 
+D=(p==null?void 0:p.data)??p,O=(D==null?void 0:D.projects)??D;return 
+Array.isArray(O)?O.map(E=>{var J,be,ce,x,b;const R=(E.category||E.type||"fullst
+ack").toString().toLowerCase(),H=Array.isArray(E.tech)?E.tech:Array.isArray(E.t
+echnologies)?E.technologies:[],Y={github:((J=E.links)==null?void 
+0:J.github)??E.github??"",demo:((be=E.links)==null?void 
+0:be.demo)??E.demo??""},T={challenge:((ce=E.caseStudy)==null?void 
+0:ce.challenge)??E.challenge??"",solution:((x=E.caseStudy)==null?void 
+0:x.solution)??E.solution??"",metrics:((b=E.caseStudy)==null?void 0:b.metrics)?
+?E.metrics??""};return{id:E._id??E.id??E.title??`${R}-${Math.random()}`,title:E
+.title??"Untitled Project",category:R,description:E.description??E.summary??"",
+tech:H,links:Y,caseStudy:T}}):null}async function Pj(){var D;const 
+p={"Content-Type":"application/json"};p["x-admin-api-key"]=jr;try{const 
+O=await fetch(Yj,{headers:p});if(!O.ok)throw new Error(`API error: 
+${O.status}`);const E=await O.json();return Jj(E)||((D=E==null?void 
+0:E.data)==null?void 0:D.projects)||E}catch(O){throw console.error("Failed to 
+fetch projects data:",O),O}}function Kj(p){const D=(p==null?void 
+0:p.data)??p,O=(D==null?void 0:D.experiences)??(D==null?void 
+0:D.experience)??D;return Array.isArray(O)?O.map(E=>({id:E._id??E.id??`${E.comp
+any??E.role??"experience"}-${Math.random()}`,role:E.role??E.position??"Unknown 
+Role",company:E.company??E.organization??"Unknown Company",location:E.location?
+?E.place??"",period:E.period??E.duration??"",bullets:Array.isArray(E.bullets)?E
+.bullets:Array.isArray(E.responsibilities)?E.responsibilities:E.summary?[E.summ
+ary]:[],tech:Array.isArray(E.tech)?E.tech:Array.isArray(E.technologies)?E.techn
+ologies:[]})):null}async function Fj(){var D,O;const 
+p={"Content-Type":"application/json"};p["x-admin-api-key"]=jr;try{const 
+E=await fetch(Gj,{headers:p});if(!E.ok)throw new Error(`API error: 
+${E.status}`);const R=await E.json();return Kj(R)||((D=R==null?void 
+0:R.data)==null?void 0:D.experiences)||((O=R==null?void 0:R.data)==null?void 
+0:O.experience)||R}catch(E){throw console.error("Failed to fetch experiences 
+data:",E),E}}function Ij(p){const D=(p==null?void 0:p.data)??p;if(!D)return 
+null;const O=D.contact??D;return{title:O.title??D.title??"Let's 
+Connect",description:O.description??D.description??"I am currently open to 
+contracting opportunities, senior technical roles, or architectural 
+consultancies. Feel free to shoot over a message.",email:O.email??D.email??"mia
+nammarsalar@gmail.com",location:O.location??D.location??"Lahore, Pakistan 
+(Remote Friendly)",socials:Array.isArray(O.socials)?O.socials:Array.isArray(D.s
+ocials)?D.socials:[{name:"GitHub",url:"https://github.com/bracketdeveloper"},{n
+ame:"LinkedIn",url:"https://www.linkedin.com/in/mianammarsalar"}]}}async 
+function Wj(){var D;const 
+p={"Content-Type":"application/json"};p["x-admin-api-key"]=jr;try{const 
+O=await fetch(Xj,{headers:p});if(!O.ok)throw new Error(`API error: 
+${O.status}`);const E=await O.json();return Ij(E)||((D=E==null?void 
+0:E.data)==null?void 0:D.contact)||E}catch(O){throw console.error("Failed to 
+fetch contact data:",O),O}}const 
+eC={Calendar:L1,Briefcase:Uh,Users:wj,Wrench:X1};function tC(p){return p?Array.
+isArray(p.stats)&&p.stats.length>0?p.stats.map(D=>({label:D.label??D.name??"Sta
+t",value:`${D.value??D.count??""}`,icon:D.icon??D.iconName??"Briefcase"})):[{la
+bel:"Years 
+Experience",value:`${p.experienceYears??""}`,icon:"Calendar"},{label:"Projects 
+Built",value:`${p.projectsBuilt??""}`,icon:"Briefcase"},{label:"Happy 
+Clients",value:`${p.happyClients??""}`,icon:"Users"},{label:"Core Stack Techs",
+value:`${p.coreStack??""}`,icon:"Wrench"}].filter(D=>D.value):[]}function 
+nC(p){return p?p.split(/\n\s*\n/).map(D=>D.trim()).filter(Boolean):[]}function 
+aC(){var nt,ae,Se,At;const[p,D]=ue.useState(null),[O,E]=ue.useState(!0),[R,H]=u
+e.useState(null);ue.useEffect(()=>{(async()=>{try{E(!0);const Fe=await 
+Qj();D((Fe==null?void 
+0:Fe.data)??Fe??null),H(null)}catch(Fe){H(Fe.message||"Unable to load about 
+section."),D(null)}finally{E(!1)}})()},[]);const Y=tC(p),T=nC(p==null?void 
+0:p.description),J=p==null?void 0:p.profileImage,be=p==null?void 
+0:p.subtitle,ce=(p==null?void 0:p.heading)??(p==null?void 0:p.title)??"About 
+Me",x=(p==null?void 0:p.ctaText)??((nt=p==null?void 
+0:p.primaryAction)==null?void 0:nt.text),b=(p==null?void 
+0:p.ctaHref)??((ae=p==null?void 0:p.primaryAction)==null?void 
+0:ae.href)??"#contact",w=(p==null?void 0:p.downloadText)??((Se=p==null?void 
+0:p.secondaryAction)==null?void 0:Se.text),fe=(p==null?void 
+0:p.downloadHref)??((At=p==null?void 0:p.secondaryAction)==null?void 
+0:At.href);return O?f.jsxDEV("section",{id:"about",className:"section about-sec
+tion",children:[f.jsxDEV("h2",{className:"section-title",children:ce},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/About.jsx",
+lineNumber:80,columnNumber:9},this),f.jsxDEV("p",{style:{textAlign:"center",col
+or:"var(--text-muted)"},children:"Loading about content..."},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/components/About.jsx",lineNumber:81,columnNumber:9},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/About.jsx",
+lineNumber:79,columnNumber:7},this):R||!p?f.jsxDEV("section",{id:"about",classN
+ame:"section about-section",children:[f.jsxDEV("h2",{className:"section-title",
+children:ce},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/comp
+onents/About.jsx",lineNumber:89,columnNumber:9},this),f.jsxDEV("p",{style:{text
+Align:"center",color:"var(--text-muted)"},children:R??"No about data 
+available."},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/components/About.jsx",lineNumber:90,columnNumber:9},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/About.jsx",
+lineNumber:88,columnNumber:7},this):f.jsxDEV("section",{id:"about",className:"s
+ection about-section",children:[f.jsxDEV("h2",{className:"section-title",childr
+en:ce},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components
+/About.jsx",lineNumber:99,columnNumber:7},this),be&&f.jsxDEV("p",{className:"se
+ction-subtitle",children:be},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket De
+veloper/src/components/About.jsx",lineNumber:100,columnNumber:20},this),f.jsxDE
+V("div",{className:"about-grid",children:[Y.length>0&&f.jsxDEV("div",{className
+:"about-stats-panel",children:Y.map(qe=>{const Fe=typeof 
+qe.icon=="string"?eC[qe.icon]??Uh:qe.icon;return 
+f.jsxDEV("div",{className:"glass-card stat-card",children:[f.jsxDEV("div",{clas
+sName:"stat-icon-wrapper",children:f.jsxDEV(Fe,{size:22},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/About.jsx",
+lineNumber:110,columnNumber:21},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/About.jsx",
+lineNumber:109,columnNumber:19},this),f.jsxDEV("div",{className:"stat-value",ch
+ildren:qe.value},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/
+components/About.jsx",lineNumber:112,columnNumber:19},this),f.jsxDEV("div",{cla
+ssName:"stat-label",children:qe.label},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/About.jsx",
+lineNumber:113,columnNumber:19},this)]},`${qe.label}-${qe.value}`,!0,{fileName:
+"D:/Projects/Cursor/Bracket Developer/src/components/About.jsx",lineNumber:108,
+columnNumber:17},this)})},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Devel
+oper/src/components/About.jsx",lineNumber:104,columnNumber:11},this),f.jsxDEV("
+div",{className:"glass-card about-narrative-panel",children:[(p==null?void 0:p.
+sectionHeading)&&f.jsxDEV("h3",{className:"narrative-heading",children:p.sectio
+nHeading},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/compone
+nts/About.jsx",lineNumber:122,columnNumber:13},this),f.jsxDEV("div",{className:
+"about-narrative-content",children:[J&&f.jsxDEV("div",{className:"profile-img-c
+ontainer",children:f.jsxDEV("img",{src:J,alt:"Profile",className:"profile-img"}
+,void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/About
+.jsx",lineNumber:130,columnNumber:17},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/About.jsx",
+lineNumber:129,columnNumber:15},this),T.length>0&&T.map((qe,Fe)=>f.jsxDEV("p",{
+className:"narrative-paragraph",children:qe},Fe,!1,{fileName:"D:/Projects/Curso
+r/Bracket Developer/src/components/About.jsx",lineNumber:134,columnNumber:15},t
+his)),f.jsxDEV("div",{className:"narrative-clearfix"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/About.jsx",
+lineNumber:138,columnNumber:13},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/About.jsx",
+lineNumber:127,columnNumber:11},this),f.jsxDEV("div",{className:"narrative-acti
+ons",children:[x&&b&&f.jsxDEV("a",{href:b,className:"btn 
+btn-primary",children:x},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Develo
+per/src/components/About.jsx",lineNumber:143,columnNumber:15},this),w&&fe&&f.js
+xDEV("a",{href:fe,download:!0,className:"btn btn-secondary",style:{display:"inl
+ine-flex",alignItems:"center",gap:"8px",textDecoration:"none"},children:[f.jsxD
+EV(lj,{size:18},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/c
+omponents/About.jsx",lineNumber:154,columnNumber:17},this),w]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/About.jsx",
+lineNumber:148,columnNumber:15},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/About.jsx",
+lineNumber:141,columnNumber:11},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/About.jsx",
+lineNumber:120,columnNumber:9},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/About.jsx",
+lineNumber:102,columnNumber:7},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/components/About.jsx",lineNumber:98,columnNumber:5},this)}const 
+Bh=[{id:"frontend",name:"Frontend"},{id:"backend",name:"Backend & 
+APIs"},{id:"cloud",name:"Database & Web Services"},{id:"tools",name:"Tools & 
+DevOps"}],kh={frontend:[{name:"React.js & Hooks",level:92},{name:"Vue.js 
+Development",level:85},{name:"Tailwind CSS & 
+Bootstrap",level:90},{name:"jQuery & AJAX",level:82}],backend:[{name:"Laravel 
+Framework",level:94},{name:"Node.js & Express",level:90},{name:"RESTful APIs & 
+Integration",level:95},{name:"PHP Development",level:92},{name:"Java 
+(Automation & Reporting)",level:75}],cloud:[{name:"MySQL 
+Database",level:90},{name:"MongoDB NoSQL",level:85},{name:"WordPress 
+Customization",level:88},{name:"cPanel Hosting Admin",level:82},{name:"Website 
+Deployment",level:85}],tools:[{name:"Git & GitHub 
+Versioning",level:92},{name:"Linux System 
+Environments",level:80},{name:"GTmetrix Performance 
+Audit",level:85},{name:"Figma to Responsive HTML",level:90},{name:"Agile & 
+Scrum Collaboration",level:88}]},lC={frontend:q1,backend:Mh,cloud:KN,tools:X1};
+function oC(p){return Object.keys(p).map(D=>({id:D,name:D.charAt(0).toUpperCase
+()+D.slice(1)}))}function 
+uC(p){if(!p)return{skillTabs:Bh,skillsByCategory:kh};const D=(p==null?void 0:p.
+data)??p,O=D.skillsByCategory||(Array.isArray(D.categories)?D.categories.reduce
+((R,H)=>{const Y=(H.tabId||H.name||"frontend").toString().toLowerCase();return 
+R[Y]=(H.skills||[]).map(T=>({name:T.name||"Unknown Skill",level:Number(T.level?
+?T.proficiency??0)})),R},{}):Array.isArray(D)?D.reduce((R,H)=>{const 
+Y=(H.category||"frontend").toLowerCase();return 
+R[Y]=R[Y]??[],R[Y].push({name:H.name||H.skill||"Unknown Skill",level:Number(H.l
+evel??H.proficiency??0)}),R},{}):null),E=D.skillTabs||(Array.isArray(D.categori
+es)?D.categories.map(R=>({id:(R.tabId||R.name||"frontend").toString().toLowerCa
+se(),name:R.name||R.tabId||"Skill"})):O?oC(O):null);return{skillTabs:E&&E.lengt
+h?E:Bh,skillsByCategory:O||kh}}function iC(){const[p,D]=ue.useState("frontend")
+,[O,E]=ue.useState(Bh),[R,H]=ue.useState(kh),[Y,T]=ue.useState(!0),[J,be]=ue.us
+eState(null);ue.useEffect(()=>{(async()=>{try{T(!0);const b=await 
+Zj(),w=uC(b);E(w.skillTabs),H(w.skillsByCategory),D(fe=>{var nt;return 
+w.skillsByCategory[fe]?fe:((nt=w.skillTabs[0])==null?void 
+0:nt.id)||"frontend"}),be(null)}catch(b){be(b.message||"Failed to load 
+skills")}finally{T(!1)}})()},[]);const ce=R[p]??[];return 
+Y?f.jsxDEV("section",{id:"skills",className:"section skills-section",children:[
+f.jsxDEV("h2",{className:"section-title",children:"My Skills Matrix"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Skills.jsx"
+,lineNumber:110,columnNumber:9},this),f.jsxDEV("p",{className:"section-subtitle
+",children:"A deep dive into the technologies, framework suites, and system 
+tools that form my operational stack."},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Skills.jsx"
+,lineNumber:111,columnNumber:9},this),f.jsxDEV("p",{style:{textAlign:"center",c
+olor:"var(--text-muted)"},children:"Loading skills..."},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Skills.jsx"
+,lineNumber:115,columnNumber:9},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Skills.jsx"
+,lineNumber:109,columnNumber:7},this):f.jsxDEV("section",{id:"skills",className
+:"section skills-section",children:[f.jsxDEV("h2",{className:"section-title",ch
+ildren:"My Skills Matrix"},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Deve
+loper/src/components/Skills.jsx",lineNumber:122,columnNumber:7},this),f.jsxDEV(
+"p",{className:"section-subtitle",children:"A deep dive into the technologies, 
+framework suites, and system tools that form my operational stack."},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Skills.jsx"
+,lineNumber:123,columnNumber:7},this),J&&f.jsxDEV("p",{style:{textAlign:"center
+",color:"var(--danger)",marginBottom:"1rem"},children:"Could not load skills 
+from the API. Showing default skills."},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Skills.jsx"
+,lineNumber:129,columnNumber:9},this),f.jsxDEV("div",{className:"skills-tabs 
+glass-card",children:O.map(x=>{const b=lC[x.id]??q1;return 
+f.jsxDEV("button",{type:"button",onClick:()=>D(x.id),className:`tab-btn 
+${p===x.id?"active":""}`,children:[f.jsxDEV(b,{size:18},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Skills.jsx"
+,lineNumber:144,columnNumber:15},this),f.jsxDEV("span",{children:x.name},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Skills.jsx"
+,lineNumber:145,columnNumber:15},this)]},x.id,!0,{fileName:"D:/Projects/Cursor/
+Bracket Developer/src/components/Skills.jsx",lineNumber:138,columnNumber:13},th
+is)})},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components
+/Skills.jsx",lineNumber:134,columnNumber:7},this),f.jsxDEV("div",{className:"sk
+ills-grid",children:ce.map(x=>f.jsxDEV("div",{className:"glass-card skill-card"
+,children:[f.jsxDEV("div",{className:"skill-info",children:[f.jsxDEV("span",{cl
+assName:"skill-name",children:x.name},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Skills.jsx"
+,lineNumber:155,columnNumber:15},this),f.jsxDEV("span",{className:"skill-percen
+tage",children:[x.level,"%"]},void 0,!0,{fileName:"D:/Projects/Cursor/Bracket D
+eveloper/src/components/Skills.jsx",lineNumber:156,columnNumber:15},this)]},voi
+d 0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Skills.js
+x",lineNumber:154,columnNumber:13},this),f.jsxDEV("div",{className:"skill-progr
+ess-bar-track",children:f.jsxDEV("div",{className:"skill-progress-bar-fill",sty
+le:{width:`${x.level}%`}},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Devel
+oper/src/components/Skills.jsx",lineNumber:159,columnNumber:15},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Skills.jsx"
+,lineNumber:158,columnNumber:13},this)]},x.name,!0,{fileName:"D:/Projects/Curso
+r/Bracket Developer/src/components/Skills.jsx",lineNumber:153,columnNumber:11},
+this))},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/component
+s/Skills.jsx",lineNumber:151,columnNumber:7},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Skills.jsx"
+,lineNumber:121,columnNumber:5},this)}const 
+kn="https://github.com/bracketdeveloper",rC=[{id:12,title:"Enterprise ISP 
+Billing & Client Management System",category:"fullstack",description:"A 
+high-concurrency, enterprise-grade backend infrastructure engineered for a 
+prominent Dubai-based Internet Service Provider (ISP), automating subscriber 
+provisioning, real-time bandwidth usage tracking, multi-tier cyclic billing, 
+and automated revenue assurance pipelines.",tech:["PHP","MySQL","JavaScript","A
+JAX","Bootstrap","Chart.js","Linux Cron Jobs 
+Framework"],links:{github:kn,demo:""},caseStudy:{challenge:"Architecting a 
+bulletproof, zero-downtime operations engine capable of processing massive 
+data streams for thousands of concurrent subscribers, handling complex 
+overlapping billing cycles (weekly, fortnightly, monthly), calculating 
+bandwidth quotas dynamically, and mitigating payment delinquency through 
+automated escalations.",solution:"Developed an enterprise full-stack ISP 
+management platform leveraging an asynchronous, AJAX-driven core interface and 
+a highly optimized relational database matrix. Engineered automated background 
+workers via server cron daemons to compute usage metrics, dispatch real-time 
+billing notifications, and compile high-performance visual data feeds via 
+Chart.js for data-driven operations oversight.",metrics:"Automated 100% of 
+core ISP billing and customer tracking workflows, reduced administrative 
+invoice generation overhead by 95%, and dropped outstanding subscriber payment 
+delinquency by 35% within the first quarter of 
+deployment."}},{id:11,title:"VUK Player Development 
+System",category:"fullstack",description:"An advanced football sports 
+analytics and performance monitoring platform enabling clubs to evaluate, 
+benchmark, and compare individual players and entire squads across 
+comprehensive physical, physiological, and metabolic parameters using 
+interactive data visualizations.",tech:["PHP","JavaScript","Bootstrap","MySQL",
+"Chart.js"],links:{github:`${kn}/vuk`,demo:""},caseStudy:{challenge:"Aggregatin
+g complex, multi-disciplinary athletic metrics?ranging from linear speed and 
+biomechanical power to physiological blood biomarkers and VO? max data?into a 
+unified data schema that supports real-time, multi-entity comparisons without 
+UI lag or convoluted analytical views.",solution:"Engineered a full-stack 
+analytics engine utilizing a PHP backend paired with an optimized database 
+schema to process high-dimensional athletic profiles. Implemented an 
+interactive JavaScript charting interface wrapped in a clean Bootstrap UI to 
+render immediate intra-club and inter-club comparative 
+matrices.",metrics:"Transformed raw physiological test data into actionable 
+coaching insights instantly, reducing tactical athletic benchmarking overhead 
+by 80%."}},{id:10,title:"Manha Vogue POS",category:"fullstack",description:"A 
+comprehensive, custom Point of Sale (POS) system engineered specifically for 
+high-end retail jewelry management, streamlining real-time inventory tracking, 
+variant pricing, sales invoicing, and customer 
+records.",tech:["Laravel","PHP","MySQL","Vue.js","Tailwind 
+CSS","Alpine.js"],links:{github:kn,demo:""},caseStudy:{challenge:"Designing a 
+retail operations hub that handles intricate inventory variations unique to 
+the jewelry sector while maintaining a high-speed checkout 
+workflow.",solution:"Built a specialized full-stack POS application combining 
+a relational database schema for jewelry item tracking with a high-performance 
+sales interface and automated stock level adjustments.",metrics:"Cut retail 
+transaction processing speeds by 50% and established a 100% accurate, live 
+inventory tracking channel."}},{id:9,title:"BYM 
+TV",category:"fullstack",description:"An elite digital broadcasting and 
+video-on-demand platform enabling automated content aggregation from YouTube, 
+Vimeo, and Dailymotion alongside an admin-moderated user-generated video 
+publishing workflow.",tech:["Node.js","Express","MongoDB","React","YouTube 
+Data API","Vimeo API","Cloudinary"],links:{github:kn,demo:""},caseStudy:{challe
+nge:"Constructing a scalable entertainment hub capable of aggregating dynamic 
+multi-category video feeds via third-party media APIs while maintaining a 
+secure framework for community content uploads.",solution:"Developed a robust 
+full-stack streaming portal utilizing asynchronous integration with mainstream 
+video APIs and a protected user authentication layer with administrative 
+moderation.",metrics:"Established a fully self-sustaining digital media 
+ecosystem with zero overhead media delivery pipelines."}},{id:8,title:"Twilio 
+API Bulk SMS Sender",category:"fullstack",description:"A full-stack automated 
+communication utility enabling high-volume bulk SMS dispatch by parsing Excel 
+files and executing mass messaging pipelines through direct Twilio API 
+orchestration.",tech:["Node.js","Express","Twilio API","ExcelJS","JavaScript","
+MongoDB"],links:{github:kn,demo:""},caseStudy:{challenge:"Eliminating the 
+manual overhead of sending individual client notifications by building a 
+system that securely accepts dynamic Twilio credentials and processes large 
+contact lists without timeouts.",solution:"Developed a lightweight full-stack 
+application featuring an asynchronous file-upload pipeline that processes 
+spreadsheet arrays and streams API requests to the Twilio 
+gateway.",metrics:"Reduced text campaign coordination times from hours to 
+under two minutes."}},{id:7,title:"Optimized Body and 
+Mind",category:"fullstack",description:"A robust healthcare platform providing 
+a seamless online booking ecosystem for blood, vitamin, and hormone screening 
+packages, designed to bypass physical crowds and automate diagnostic 
+appointment 
+routing.",tech:["WordPress","PHP","MySQL","JavaScript","WooCommerce","Fluent 
+Forms API"],links:{github:kn,demo:"https://optimizedbodyandmind.co.uk/"},caseSt
+udy:{challenge:"Developing a secure, high-traffic medical booking solution to 
+shift patient registration and appointment scheduling from congested clinics 
+to a structured online pipeline during peak demand 
+periods.",solution:"Engineered a full-stack scheduling and patient intake web 
+application using an asynchronous time-slot allocation matrix with a secure 
+administration panel.",metrics:"Eliminated in-clinic booking bottlenecks, 
+resulting in a 60% acceleration in user intake."}},{id:5,title:"PCR Lab 
+Dubai",category:"fullstack",description:"A full-stack online PCR test booking 
+platform for PCRTEST.AE ? a DHA-approved facility in Dubai ? enabling 
+home/hotel test appointments with integrated online payments and an automated 
+admin panel.",tech:["Laravel","PHP","MySQL","Payment Gateway API","Email 
+Notifications"],links:{github:kn,demo:""},caseStudy:{challenge:"Building a 
+seamless end-to-end appointment booking flow from test selection and slot 
+reservation to secure online payments and real-time email 
+confirmations.",solution:"Developed a Laravel-powered full-stack application 
+with a public-facing booking portal and protected admin panel with dual 
+payment support.",metrics:"Reduced manual booking overhead by 70% and enabled 
+24/7 self-service appointment scheduling."}},{id:4,title:"Admin Dashboard 
+Systems",category:"fullstack",description:"A highly secure administrative 
+portal featuring dynamic business metrics visualizations, reports compilers, 
+and customizable user role 
+management.",tech:["React.js","Node.js","Express.js","MongoDB","JWT 
+Auth"],links:{github:kn,demo:""},caseStudy:{challenge:"Implementing secure 
+role-based access controls (RBAC) while compiling and visualizing dynamic 
+reporting charts from large database records.",solution:"Developed custom 
+express middlewares for JWT and role validations, combined with MongoDB 
+aggregation queries and React chart layers.",metrics:"Secured administrative 
+endpoints and reduced query aggregate response times to a swift 
+85ms."}},{id:2,title:"Fourmile Health CBD 
+Store",category:"fullstack",description:"A custom full-stack e-commerce store 
+with secure user checkout and inventory controls built to increase sales and 
+streamline product delivery.",tech:["Laravel","PHP","MySQL","cPanel","Payment G
+ateway"],links:{github:kn,demo:"https://fourmilehealth.com/"},caseStudy:{challe
+nge:"Building a robust, fully secure product listing, cart, and payment 
+processing system capable of handling secure client transaction requests 
+smoothly.",solution:"Developed a custom Laravel backend leveraging optimized 
+MySQL index schemas, transactional payment gateways, and session management to 
+secure checkouts.",metrics:"Reduced checkout abandonment rates by 25% and 
+accelerated database search latency under 60ms."}},{id:1,title:"Lahore 
+Qalandars Website",category:"frontend",description:"A high-performance 
+responsive web portal built for the Lahore Qalandars sports franchise, geared 
+towards maximizing user engagement and online brand 
+visibility.",tech:["React.js","Responsive Design","CSS Grid","SEO & Performance
+"],links:{github:kn,demo:"https://lahoreqalandars.com"},caseStudy:{challenge:"C
+reating a highly visually-appealing, animation-rich sports frontend that loads 
+rapidly on slower mobile networks and remains stable during live matches with 
+high user peaks.",solution:"Implemented responsive layouts with modern CSS 
+Grid and Flexbox, optimization of image assets, code splitting, and lazy 
+loading strategies to reduce cumulative layout shifts (CLS).",metrics:"Cut 
+mobile load time by 40% and elevated GTmetrix performance metrics to a solid A 
+rating."}},{id:3,title:"Milwaukee Academy 
+Website",category:"frontend",description:"An education-focused training and 
+program discovery website developed with user-friendly layouts and navigation, 
+boosting student enrollments.",tech:["WordPress","Figma to HTML","HTML5 & 
+CSS3","SEO"],links:{github:kn,demo:""},caseStudy:{challenge:"Translating Figma 
+designs of deep academic course architectures into fully interactive, 
+SEO-optimized, and clean layout patterns.",solution:"Created custom 
+lightweight templates, ensuring structural HTML semantics, and applied active 
+caching headers and CDNs to support high speed indexes.",metrics:"Achieved an 
+outstanding score on GTmetrix and pushed organic Google Search indexing 
+rankings up by 30%."}},{id:6,title:"Prime Home 
+Care",category:"frontend",description:"A highly accessible, senior-friendly 
+service booking platform built on WordPress for an eldercare provider, 
+featuring an optimized low-friction frontend and a full content management 
+dashboard for seamless 
+administration.",tech:["WordPress","PHP","MySQL","JavaScript","Tailwind 
+CSS","ARIA Accessibility"],links:{github:kn,demo:"https://primehomecare.uk/"},c
+aseStudy:{challenge:"Designing a digital touchpoint optimized for elderly 
+users with potential visual or cognitive impairments, while providing the 
+client with a flexible CMS.",solution:"Developed a custom full-stack 
+architecture on top of WordPress with large typography, high-contrast layouts, 
+and intuitive navigation.",metrics:"Achieved a 40% increase in self-service 
+booking completions among target elderly user demographics."}}],H1={all:"Show 
+All",fullstack:"Full Stack",frontend:"Frontend",backend:"Backend"};function 
+cC(p){const O=[...new Set(p.map(E=>(E.category||"other").toString().toLowerCase
+()))].sort((E,R)=>E==="fullstack"?-1:R==="fullstack"?1:E.localeCompare(R));retu
+rn[{id:"all",label:H1.all},...O.map(E=>({id:E,label:H1[E]??E.charAt(0).toUpperC
+ase()+E.slice(1)}))]}function sC(p){const D=(p==null?void 
+0:p.data)??p,O=(D==null?void 0:D.projects)??D;return 
+Array.isArray(O)?O.map(E=>{var J,be,ce,x,b;const R=(E.category||E.type||"fullst
+ack").toString().toLowerCase(),H=Array.isArray(E.tech)?E.tech:Array.isArray(E.t
+echnologies)?E.technologies:[],Y={github:((J=E.links)==null?void 
+0:J.github)??E.github??"",demo:((be=E.links)==null?void 
+0:be.demo)??E.demo??""},T={challenge:((ce=E.caseStudy)==null?void 
+0:ce.challenge)??E.challenge??"",solution:((x=E.caseStudy)==null?void 
+0:x.solution)??E.solution??"",metrics:((b=E.caseStudy)==null?void 0:b.metrics)?
+?E.metrics??""};return{id:E._id??E.id??E.title??`${R}-${Math.random()}`,title:E
+.title??"Untitled Project",category:R,description:E.description??E.summary??"",
+tech:H,links:Y,caseStudy:T}}):null}function fC(){const[p,D]=ue.useState("all"),
+[O,E]=ue.useState(null),[R,H]=ue.useState(rC),[Y,T]=ue.useState(!0),[J,be]=ue.u
+seState(null);ue.useEffect(()=>{(async()=>{try{T(!0);const w=await 
+Pj(),fe=sC(w);fe&&fe.length&&H(fe),be(null)}catch(w){be(w.message||"Failed to 
+load projects")}finally{T(!1)}})()},[]);const ce=ue.useMemo(()=>cC(R),[R]),x=ue
+.useMemo(()=>(p==="all"?[...R]:R.filter(w=>w.category===p)).sort((w,fe)=>w.cate
+gory==="fullstack"?-1:fe.category==="fullstack"?1:0),[p,R]);return 
+Y?f.jsxDEV("section",{id:"projects",className:"section projects-section",childr
+en:[f.jsxDEV("h2",{className:"section-title",children:"Selected 
+Projects"},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/compon
+ents/Projects.jsx",lineNumber:121,columnNumber:9},this),f.jsxDEV("p",{className
+:"section-subtitle",children:"A curated collection of full-stack engineering 
+applications built with optimal performance and clean design."},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:122,columnNumber:9},this),f.jsxDEV("p",{style:{textAlign:"center"
+,color:"var(--text-muted)"},children:"Loading projects..."},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:126,columnNumber:9},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:120,columnNumber:7},this):f.jsxDEV("section",{id:"projects",class
+Name:"section projects-section",children:[f.jsxDEV("h2",{className:"section-tit
+le",children:"Selected Projects"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:133,columnNumber:7},this),f.jsxDEV("p",{className:"section-subtit
+le",children:"A curated collection of full-stack engineering applications 
+built with optimal performance and clean design."},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:134,columnNumber:7},this),J&&f.jsxDEV("p",{style:{textAlign:"cent
+er",color:"var(--danger)",marginBottom:"1rem"},children:"Could not load 
+projects from the API. Showing default projects."},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:140,columnNumber:9},this),f.jsxDEV("div",{className:"filter-nav",
+children:ce.map(b=>f.jsxDEV("button",{type:"button",onClick:()=>D(b.id),classNa
+me:`filter-btn ${p===b.id?"active":""}`,children:b.label},b.id,!1,{fileName:"D:
+/Projects/Cursor/Bracket Developer/src/components/Projects.jsx",lineNumber:147,
+columnNumber:11},this))},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Develo
+per/src/components/Projects.jsx",lineNumber:145,columnNumber:7},this),f.jsxDEV(
+"div",{className:"projects-grid",children:x.map(b=>f.jsxDEV("div",{className:"g
+lass-card project-card",children:[f.jsxDEV("div",{className:"project-card-heade
+r",children:f.jsxDEV("span",{className:"project-category-tag",children:b.catego
+ry},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Pr
+ojects.jsx",lineNumber:162,columnNumber:15},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:161,columnNumber:13},this),f.jsxDEV("div",{className:"project-car
+d-body",children:[f.jsxDEV("h3",{className:"project-title",children:b.title},vo
+id 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects
+.jsx",lineNumber:165,columnNumber:15},this),f.jsxDEV("p",{className:"project-de
+sc",children:b.description},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Dev
+eloper/src/components/Projects.jsx",lineNumber:166,columnNumber:15},this),f.jsx
+DEV("div",{className:"project-tech-list",children:b.tech.map(w=>f.jsxDEV("span"
+,{className:"tech-badge",children:w},w,!1,{fileName:"D:/Projects/Cursor/Bracket
+ Developer/src/components/Projects.jsx",lineNumber:169,columnNumber:19},this))}
+,void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Proje
+cts.jsx",lineNumber:167,columnNumber:15},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:164,columnNumber:13},this),f.jsxDEV("div",{className:"project-car
+d-actions",children:[f.jsxDEV("button",{type:"button",onClick:()=>E(b),classNam
+e:"btn btn-secondary card-action-btn",children:[f.jsxDEV(B1,{size:16},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:181,columnNumber:17},this),"Case Study"]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:176,columnNumber:15},this),f.jsxDEV("div",{className:"project-lin
+ks-group",children:[f.jsxDEV("a",{href:b.links.github,target:"_blank",rel:"noop
+ener noreferrer",className:"icon-link","aria-label":"GitHub 
+Repository",children:f.jsxDEV(wh,{size:20},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:192,columnNumber:19},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:185,columnNumber:17},this),b.links.demo&&f.jsxDEV("a",{href:b.lin
+ks.demo,target:"_blank",rel:"noopener 
+noreferrer",className:"icon-link","aria-label":"Live 
+Demo",children:f.jsxDEV(z1,{size:20},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:202,columnNumber:21},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:195,columnNumber:19},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:184,columnNumber:15},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:175,columnNumber:13},this)]},b.id,!0,{fileName:"D:/Projects/Curso
+r/Bracket Developer/src/components/Projects.jsx",lineNumber:160,columnNumber:11
+},this))},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/compone
+nts/Projects.jsx",lineNumber:158,columnNumber:7},this),O&&f.jsxDEV("div",{class
+Name:"modal-overlay",onClick:()=>E(null),role:"presentation",children:f.jsxDEV(
+"div",{className:"glass-card modal-container",onClick:b=>b.stopPropagation(),ro
+le:"dialog","aria-modal":"true",children:[f.jsxDEV("button",{type:"button",onCl
+ick:()=>E(null),className:"modal-close-btn","aria-label":"Close Case Study 
+Modal",children:f.jsxDEV(G1,{size:24},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:225,columnNumber:15},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:219,columnNumber:13},this),f.jsxDEV("div",{className:"modal-conte
+nt",children:[f.jsxDEV("span",{className:"modal-category",children:O.category.t
+oUpperCase()},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/com
+ponents/Projects.jsx",lineNumber:228,columnNumber:15},this),f.jsxDEV("h3",{clas
+sName:"modal-title",children:O.title},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:229,columnNumber:15},this),f.jsxDEV("p",{className:"modal-intro",
+children:O.description},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Develop
+er/src/components/Projects.jsx",lineNumber:230,columnNumber:15},this),f.jsxDEV(
+"div",{className:"modal-sections",children:[f.jsxDEV("div",{className:"modal-se
+ction-block",children:[f.jsxDEV("div",{className:"section-block-title",children
+:[f.jsxDEV(zj,{size:18,className:"block-icon"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:234,columnNumber:21},this),f.jsxDEV("h4",{children:"The 
+Challenge"},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/compo
+nents/Projects.jsx",lineNumber:235,columnNumber:21},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:233,columnNumber:19},this),f.jsxDEV("p",{children:O.caseStudy.cha
+llenge},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/component
+s/Projects.jsx",lineNumber:237,columnNumber:19},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:232,columnNumber:17},this),f.jsxDEV("div",{className:"modal-secti
+on-block",children:[f.jsxDEV("div",{className:"section-block-title",children:[f
+.jsxDEV(fj,{size:18,className:"block-icon"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:241,columnNumber:21},this),f.jsxDEV("h4",{children:"The 
+Solution"},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/compon
+ents/Projects.jsx",lineNumber:242,columnNumber:21},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:240,columnNumber:19},this),f.jsxDEV("p",{children:O.caseStudy.sol
+ution},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components
+/Projects.jsx",lineNumber:244,columnNumber:19},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:239,columnNumber:17},this),f.jsxDEV("div",{className:"modal-secti
+on-block",children:[f.jsxDEV("div",{className:"section-block-title",children:[f
+.jsxDEV(B1,{size:18,className:"block-icon"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:248,columnNumber:21},this),f.jsxDEV("h4",{children:"Technical 
+Metrics"},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/compone
+nts/Projects.jsx",lineNumber:249,columnNumber:21},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:247,columnNumber:19},this),f.jsxDEV("div",{className:"metrics-box
+",children:f.jsxDEV("strong",{children:O.caseStudy.metrics},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:252,columnNumber:21},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:251,columnNumber:19},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:246,columnNumber:17},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:231,columnNumber:15},this),f.jsxDEV("div",{className:"modal-foote
+r-actions",children:[f.jsxDEV("a",{href:O.links.github,className:"btn 
+btn-secondary",children:[f.jsxDEV(wh,{size:18},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:258,columnNumber:19},this),"Source Code"]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:257,columnNumber:17},this),O.links.demo&&f.jsxDEV("a",{href:O.lin
+ks.demo,target:"_blank",rel:"noopener noreferrer",className:"btn 
+btn-primary",children:[f.jsxDEV(z1,{size:18},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:268,columnNumber:21},this),"Launch Live Demo"]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:262,columnNumber:19},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:256,columnNumber:15},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:227,columnNumber:13},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:213,columnNumber:11},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:212,columnNumber:9},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:132,columnNumber:5},this)}const dC=[{role:"Freelance Full Stack 
+Developer",company:"Bracket Developer",location:"Remote / 
+Freelance",period:"May 2020 ? Present",bullets:["Delivered custom web 
+development solutions and administrative dashboards for local and 
+international clients.","Developed dynamic, SEO-optimized business 
+applications using React.js, PHP, Laravel, and Node.js.","Managed complete 
+project lifecycles including requirements gathering, development, testing, 
+deployment, and maintenance.","Developed and customized WordPress websites for 
+e-commerce, healthcare, and education clients."],tech:["PHP","Laravel","MongoDB
+","Express","React.js","Node.js","WordPress","MySQL"]},{role:"Full Stack 
+Developer",company:"Jillani'z",location:"Sheffield, United",period:"June 2024 
+? Present",bullets:["Develop and maintain complex full-stack web applications 
+using JavaScript, PHP, Laravel, HTML, and CSS.","Build responsive and highly 
+interactive user interfaces utilizing modern React.js and Vue.js 
+frameworks.","Convert design wireframes (Figma/UI/UX) into fully functional, 
+mobile-responsive, and pixel-perfect web pages.","Design, architect, and 
+integrate robust RESTful APIs for web-based products and internal 
+systems.","Develop backend automation modules using Node.js and Java for 
+reporting, database triggers, and data processing.","Manage and optimize 
+deployments, hosting environments, server updates, and automated backups."],tec
+h:["React.js","Vue.js","Laravel","Node.js","MySQL"]},{role:"Software 
+Developer",company:"Sony UK Technology Centre",location:"United 
+Kingdom",period:"August 2023 ? May 2024",bullets:["Assisted in developing and 
+maintaining critical internal software tools and web-based solutions for 
+operational support.","Supported frontend updates and system functionality 
+enhancements using clean JavaScript, HTML5, and CSS3.","Participated in 
+end-to-end debugging, unit testing, and QA activities to guarantee system 
+stability and peak operational performance.","Collaborated with 
+multi-functional teams to resolve technical bugs and improve internal workflow 
+efficiency."],tech:["JavaScript","HTML5","CSS3","Bootstrap & CSS Grid","QA 
+Testing","Internal Tools"]}];function mC(){const[p,D]=ue.useState(dC),[O,E]=ue.
+useState(!0),[R,H]=ue.useState(null);return 
+ue.useEffect(()=>{(async()=>{try{E(!0);const T=await 
+Fj();Array.isArray(T)&&T.length&&D(T),H(null)}catch(T){H(T.message||"Failed to 
+load experience")}finally{E(!1)}})()},[]),O?f.jsxDEV("section",{id:"experience"
+,className:"section experience-section",children:[f.jsxDEV("h2",{className:"sec
+tion-title",children:"Professional Journey"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:33,columnNumber:9},this),f.jsxDEV("p",{className:"section-subti
+tle",children:"A chronological overview of my professional engineering 
+milestones, organizational achievements, and technical contributions."},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:34,columnNumber:9},this),f.jsxDEV("p",{style:{textAlign:"center
+",color:"var(--text-muted)"},children:"Loading experience..."},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:38,columnNumber:9},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:32,columnNumber:7},this):f.jsxDEV("section",{id:"experience",cl
+assName:"section experience-section",children:[f.jsxDEV("h2",{className:"sectio
+n-title",children:"Professional Journey"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:45,columnNumber:7},this),f.jsxDEV("p",{className:"section-subti
+tle",children:"A chronological overview of my professional engineering 
+milestones, organizational achievements, and technical contributions."},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:46,columnNumber:7},this),R&&f.jsxDEV("p",{style:{textAlign:"cen
+ter",color:"var(--danger)",marginBottom:"1rem"},children:"Could not load 
+experience from the API. Showing default experience."},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:52,columnNumber:9},this),f.jsxDEV("div",{className:"timeline-co
+ntainer",children:[f.jsxDEV("div",{className:"timeline-center-line"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:58,columnNumber:9},this),p.map((Y,T)=>f.jsxDEV("div",{className
+:`timeline-item ${T%2===0?"left":"right"}`,children:[f.jsxDEV("div",{className:
+"timeline-node",children:f.jsxDEV(Uh,{size:16},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:65,columnNumber:15},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:64,columnNumber:13},this),f.jsxDEV("div",{className:"glass-card
+ timeline-card",children:[f.jsxDEV("div",{className:"timeline-card-header",chil
+dren:[f.jsxDEV("span",{className:"timeline-period",children:[f.jsxDEV(L1,{size:
+14},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Ex
+perience.jsx",lineNumber:70,columnNumber:19},this),Y.period]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:69,columnNumber:17},this),f.jsxDEV("span",{className:"timeline-
+location",children:[f.jsxDEV(Y1,{size:14},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:74,columnNumber:19},this),Y.location]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:73,columnNumber:17},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:68,columnNumber:15},this),f.jsxDEV("h3",{className:"timeline-ro
+le",children:Y.role},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/
+src/components/Experience.jsx",lineNumber:78,columnNumber:15},this),f.jsxDEV("h
+4",{className:"timeline-company",children:Y.company},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:79,columnNumber:15},this),f.jsxDEV("ul",{className:"timeline-bu
+llet-list",children:Y.bullets.map((J,be)=>f.jsxDEV("li",{className:"timeline-bu
+llet-item",children:J},`${J}-${be}`,!1,{fileName:"D:/Projects/Cursor/Bracket De
+veloper/src/components/Experience.jsx",lineNumber:82,columnNumber:19},this))},v
+oid 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experie
+nce.jsx",lineNumber:80,columnNumber:15},this),f.jsxDEV("div",{className:"timeli
+ne-tech-badges",children:Y.tech.map(J=>f.jsxDEV("span",{className:"tech-badge",
+children:J},J,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components
+/Experience.jsx",lineNumber:89,columnNumber:19},this))},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:87,columnNumber:15},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:67,columnNumber:13},this)]},Y.id??Y.company??Y.role??T,!0,{file
+Name:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.jsx",lineN
+umber:60,columnNumber:11},this))]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:57,columnNumber:7},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:44,columnNumber:5},this)}const hC={title:"Let's 
+Connect",description:"I am currently open to contracting opportunities, senior 
+technical roles, or architectural consultancies. Feel free to shoot over a 
+message.",email:"mianammarsalar@gmail.com",location:"Lahore, Pakistan (Remote F
+riendly)",socials:[{name:"GitHub",url:"https://github.com/bracketdeveloper"},{n
+ame:"LinkedIn",url:"https://www.linkedin.com/in/mianammarsalar"}]};function pC(
+){const[p,D]=ue.useState(hC),[O,E]=ue.useState({name:"",email:"",subject:"",mes
+sage:""}),[R,H]=ue.useState({}),[Y,T]=ue.useState(!1),[J,be]=ue.useState(!1),[c
+e,x]=ue.useState(!1),b=()=>{navigator.clipboard.writeText(p.email),x(!0),setTim
+eout(()=>x(!1),2e3)};ue.useEffect(()=>{(async()=>{try{const Se=await 
+Wj();D(Se)}catch(Se){console.error("Contact API failed:",Se)}})()},[]);const w=
+ae=>{const{name:Se,value:At}=ae.target;E(qe=>({...qe,[Se]:At})),R[Se]&&H(qe=>({
+...qe,[Se]:""}))},fe=()=>{const ae={};return O.name.trim()||(ae.name="Full 
+name is required"),O.email.trim()?/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(O.email)||(
+ae.email="Please provide a valid email format"):ae.email="Email address is 
+required",O.subject.trim()||(ae.subject="Subject line is 
+required"),O.message.trim()||(ae.message="Message content cannot be blank"),H(a
+e),Object.keys(ae).length===0},nt=ae=>{ae.preventDefault(),fe()&&(T(!0),setTime
+out(()=>{T(!1),be(!0),E({name:"",email:"",subject:"",message:""}),setTimeout(()
+=>be(!1),5e3)},2e3))};return 
+f.jsxDEV("section",{id:"contact",className:"section contact-section",children:[
+f.jsxDEV("h2",{className:"section-title",children:"Get In Touch"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:87,columnNumber:7},this),f.jsxDEV("p",{className:"section-subtitle
+",children:"Have an exciting engineering problem, an architectural challenge, 
+or a full-stack project idea? Let's talk."},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:88,columnNumber:7},this),f.jsxDEV("div",{className:"contact-grid",
+children:[f.jsxDEV("div",{className:"contact-details-panel glass-card",children
+:[f.jsxDEV("h3",{className:"contact-panel-title",children:p.title},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:95,columnNumber:11},this),f.jsxDEV("p",{className:"contact-panel-d
+esc",children:p.description},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket De
+veloper/src/components/Contact.jsx",lineNumber:96,columnNumber:11},this),f.jsxD
+EV("div",{className:"contact-items",children:[f.jsxDEV("div",{className:"contac
+t-info-item copyable",onClick:b,role:"presentation",children:[f.jsxDEV("div",{c
+lassName:"contact-info-icon",children:f.jsxDEV(gj,{size:20},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:101,columnNumber:17},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:100,columnNumber:15},this),f.jsxDEV("div",{className:"contact-info
+-text",children:[f.jsxDEV("span",{className:"info-label",children:"Direct 
+Email"},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/component
+s/Contact.jsx",lineNumber:104,columnNumber:17},this),f.jsxDEV("span",{className
+:"info-val",children:p.email},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket D
+eveloper/src/components/Contact.jsx",lineNumber:105,columnNumber:17},this)]},vo
+id 0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.
+jsx",lineNumber:103,columnNumber:15},this),f.jsxDEV("button",{type:"button",cla
+ssName:"copy-btn","aria-label":"Copy email address to clipboard",children:ce?f.
+jsxDEV("span",{className:"copied-text",children:"Copied!"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:108,columnNumber:27},this):f.jsxDEV(tj,{size:16},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:108,columnNumber:74},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:107,columnNumber:15},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:99,columnNumber:13},this),f.jsxDEV("div",{className:"contact-info-
+item",children:[f.jsxDEV("div",{className:"contact-info-icon",children:f.jsxDEV
+(Y1,{size:20},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/com
+ponents/Contact.jsx",lineNumber:114,columnNumber:17},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:113,columnNumber:15},this),f.jsxDEV("div",{className:"contact-info
+-text",children:[f.jsxDEV("span",{className:"info-label",children:"Location"},v
+oid 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact
+.jsx",lineNumber:117,columnNumber:17},this),f.jsxDEV("span",{className:"info-va
+l",children:p.location},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Develop
+er/src/components/Contact.jsx",lineNumber:118,columnNumber:17},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:116,columnNumber:15},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:112,columnNumber:13},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:98,columnNumber:11},this),f.jsxDEV("div",{className:"contact-socia
+ls-group",children:[f.jsxDEV("h4",{className:"socials-title",children:"Follow 
+My Engineering Work"},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer
+/src/components/Contact.jsx",lineNumber:124,columnNumber:13},this),f.jsxDEV("di
+v",{className:"socials-links",children:p.socials.map(ae=>{const 
+Se=ae.name.toLowerCase().includes("github")?f.jsxDEV(wh,{size:22},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:128,columnNumber:19},this):f.jsxDEV(mj,{size:22},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:130,columnNumber:19},this);return f.jsxDEV("a",{href:ae.url,classN
+ame:"social-icon-btn","aria-label":ae.name,target:"_blank",rel:"noopener 
+noreferrer",children:Se},ae.name,!1,{fileName:"D:/Projects/Cursor/Bracket Devel
+oper/src/components/Contact.jsx",lineNumber:133,columnNumber:19},this)})},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:125,columnNumber:13},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:123,columnNumber:11},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:94,columnNumber:9},this),f.jsxDEV("div",{className:"contact-form-p
+anel glass-card",children:J?f.jsxDEV("div",{className:"form-success-box",childr
+en:[f.jsxDEV(JN,{size:60,className:"success-icon animate-success"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:152,columnNumber:15},this),f.jsxDEV("h3",{className:"success-headi
+ng",children:"Message Dispatched!"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:153,columnNumber:15},this),f.jsxDEV("p",{className:"success-paragr
+aph",children:"Thank you for reaching out. I have received your message and 
+will get back to you within 24 hours."},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:154,columnNumber:15},this),f.jsxDEV("button",{type:"button",onClic
+k:()=>be(!1),className:"btn btn-primary",children:"Send Another Message"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:158,columnNumber:15},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:151,columnNumber:13},this):f.jsxDEV("form",{className:"contact-for
+m",onSubmit:nt,noValidate:!0,children:[f.jsxDEV("div",{className:"form-row",chi
+ldren:[f.jsxDEV("div",{className:"form-group",children:[f.jsxDEV("label",{htmlF
+or:"name",className:"form-label",children:"Full Name"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:166,columnNumber:19},this),f.jsxDEV("input",{type:"text",id:"name"
+,name:"name",value:O.name,onChange:w,className:`form-input 
+${R.name?"error":""}`,placeholder:"John Doe",disabled:Y},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:167,columnNumber:19},this),R.name&&f.jsxDEV("span",{className:"err
+or-message",children:[f.jsxDEV(Ys,{size:14},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:179,columnNumber:23},this),R.name]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:178,columnNumber:21},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:165,columnNumber:17},this),f.jsxDEV("div",{className:"form-group",
+children:[f.jsxDEV("label",{htmlFor:"email",className:"form-label",children:"Em
+ail Address"},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/com
+ponents/Contact.jsx",lineNumber:185,columnNumber:19},this),f.jsxDEV("input",{ty
+pe:"email",id:"email",name:"email",value:O.email,onChange:w,className:`form-inp
+ut ${R.email?"error":""}`,placeholder:"john@example.com",disabled:Y},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:186,columnNumber:19},this),R.email&&f.jsxDEV("span",{className:"er
+ror-message",children:[f.jsxDEV(Ys,{size:14},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:198,columnNumber:23},this),R.email]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:197,columnNumber:21},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:184,columnNumber:17},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:164,columnNumber:15},this),f.jsxDEV("div",{className:"form-group",
+children:[f.jsxDEV("label",{htmlFor:"subject",className:"form-label",children:"
+Subject"},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/compone
+nts/Contact.jsx",lineNumber:206,columnNumber:17},this),f.jsxDEV("input",{type:"
+text",id:"subject",name:"subject",value:O.subject,onChange:w,className:`form-in
+put ${R.subject?"error":""}`,placeholder:"Project Inquiry",disabled:Y},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:207,columnNumber:17},this),R.subject&&f.jsxDEV("span",{className:"
+error-message",children:[f.jsxDEV(Ys,{size:14},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:219,columnNumber:21},this),R.subject]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:218,columnNumber:19},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:205,columnNumber:15},this),f.jsxDEV("div",{className:"form-group",
+children:[f.jsxDEV("label",{htmlFor:"message",className:"form-label",children:"
+Your Message"},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/co
+mponents/Contact.jsx",lineNumber:226,columnNumber:17},this),f.jsxDEV("textarea"
+,{id:"message",name:"message",rows:5,value:O.message,onChange:w,className:`form
+-textarea ${R.message?"error":""}`,placeholder:"Tell me about your 
+project...",disabled:Y},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Develop
+er/src/components/Contact.jsx",lineNumber:227,columnNumber:17},this),R.message&
+&f.jsxDEV("span",{className:"error-message",children:[f.jsxDEV(Ys,{size:14},voi
+d 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.j
+sx",lineNumber:239,columnNumber:21},this),R.message]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:238,columnNumber:19},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:225,columnNumber:15},this),f.jsxDEV("button",{type:"submit",classN
+ame:"btn btn-primary 
+submit-btn",disabled:Y,children:[Y?f.jsxDEV(pj,{size:18,className:"spin"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:246,columnNumber:31},this):f.jsxDEV(Cj,{size:18},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:246,columnNumber:72},this),"Send Message"]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:245,columnNumber:15},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:163,columnNumber:13},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:149,columnNumber:9},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:93,columnNumber:7},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:86,columnNumber:5},this)}const yC={borderTop:"1px solid 
+var(--border-light)",padding:"40px 24px",background:"var(--bg-secondary)",posit
+ion:"relative",zIndex:2},gC={maxWidth:"1200px",margin:"0 auto",textAlign:"cente
+r"},vC={fontSize:"0.9rem",color:"var(--text-muted)",fontWeight:500};function bC
+(){const[p,D]=ue.useState(()=>localStorage.getItem("theme")||"dark");ue.useEffe
+ct(()=>{document.documentElement.setAttribute("data-theme",p),localStorage.setI
+tem("theme",p)},[p]);const O=new Date().getFullYear();return 
+f.jsxDEV(f.Fragment,{children:[f.jsxDEV(Uj,{theme:p,setTheme:D},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/App.jsx",lineNumber:44
+,columnNumber:7},this),f.jsxDEV("main",{children:[f.jsxDEV(Vj,{},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/App.jsx",lineNumber:46,columnNumber:9},this),f.jsxDEV(aC,{},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/App.jsx",lineNumber:47,columnNumber:9},this),f.jsxDEV(iC,{},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/App.jsx",lineNumber:48,columnNumber:9},this),f.jsxDEV(fC,{},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/App.jsx",lineNumber:49,columnNumber:9},this),f.jsxDEV(mC,{},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/App.jsx",lineNumber:50,columnNumber:9},this),f.jsxDEV(pC,{},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/App.jsx",lineNumber:51,columnNumber:9},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/App.jsx",lineNumber:45
+,columnNumber:7},this),f.jsxDEV("footer",{style:yC,children:f.jsxDEV("div",{sty
+le:gC,children:f.jsxDEV("p",{style:vC,children:["? ",O," Mian Ammar Salar. All 
+rights reserved. Designed with visual excellence and clean React 
+modules."]},void 0,!0,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/App.jsx",lineNumber:55,columnNumber:11},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/App.jsx",lineNumber:54,columnNumber:9},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/App.jsx",lineNumber:53,columnNumber:7},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/App.jsx",lineNumber:43
+,columnNumber:5},this)}kN.createRoot(document.getElementById("root")).render(f.
+jsxDEV(ue.StrictMode,{children:f.jsxDEV(bC,{},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/main.jsx",lineNumber:8,columnNumber:5},void 0)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/main.jsx",lineNumber:7,columnNumber:3},void 0));
+
+
+
+dist\assets\index-jAoATFDh.js:450: */const kj=[["path",{d:"M14.7 6.3a1 1 0 0 0 
+0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 
+2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z",key:"cbrjhi"}]],X1=Me
+("wrench",kj),k1=[{name:"Home",href:"#home"},{name:"About",href:"#about"},{name
+:"Skills",href:"#skills"},{name:"Projects",href:"#projects"},{name:"Experience"
+,href:"#experience"},{name:"Contact",href:"#contact"}];function Uj({theme:p,set
+Theme:D}){const[O,E]=ue.useState(!1),[R,H]=ue.useState(!1);ue.useEffect(()=>{co
+nst T=()=>H(window.scrollY>20);return window.addEventListener("scroll",T),()=>w
+indow.removeEventListener("scroll",T)},[]);const 
+Y=()=>D(T=>T==="light"?"dark":"light");return 
+f.jsxDEV("nav",{className:`navbar ${R?"scrolled":""}`,children:[f.jsxDEV("div",
+{className:"navbar-container",children:[f.jsxDEV("a",{href:"#home",className:"n
+av-logo",children:[f.jsxDEV(IN,{size:22,className:"logo-icon"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Navbar.jsx"
+,lineNumber:29,columnNumber:11},this),f.jsxDEV("span",{children:["Bracket",f.js
+xDEV("span",{className:"logo-accent",children:"Developer"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Navbar.jsx"
+,lineNumber:31,columnNumber:20},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Navbar.jsx"
+,lineNumber:30,columnNumber:11},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Navbar.jsx"
+,lineNumber:28,columnNumber:9},this),f.jsxDEV("div",{className:"nav-menu",child
+ren:k1.map(T=>f.jsxDEV("a",{href:T.href,className:"nav-item",children:T.name},T
+.name,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Navbar.
+jsx",lineNumber:37,columnNumber:13},this))},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Navbar.jsx"
+,lineNumber:35,columnNumber:9},this),f.jsxDEV("div",{className:"nav-controls",c
+hildren:[f.jsxDEV("button",{type:"button",onClick:Y,className:"theme-toggle","a
+ria-label":"Toggle visual 
+theme",children:p==="light"?f.jsxDEV(Ej,{size:20},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Navbar.jsx"
+,lineNumber:50,columnNumber:34},this):f.jsxDEV(Rj,{size:20},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Navbar.jsx"
+,lineNumber:50,columnNumber:55},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Navbar.jsx"
+,lineNumber:44,columnNumber:11},this),f.jsxDEV("button",{type:"button",onClick:
+()=>E(!O),className:"mobile-menu-trigger","aria-label":"Toggle navigation 
+drawer",children:O?f.jsxDEV(G1,{size:24},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Navbar.jsx"
+,lineNumber:58,columnNumber:27},this):f.jsxDEV(Sj,{size:24},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Navbar.jsx"
+,lineNumber:58,columnNumber:45},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Navbar.jsx"
+,lineNumber:52,columnNumber:11},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Navbar.jsx"
+,lineNumber:43,columnNumber:9},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Navbar.jsx"
+,lineNumber:27,columnNumber:7},this),f.jsxDEV("div",{className:`mobile-drawer $
+{O?"open":""}`,children:f.jsxDEV("div",{className:"mobile-drawer-links",childre
+n:k1.map(T=>f.jsxDEV("a",{href:T.href,className:"mobile-nav-item",onClick:()=>E
+(!1),children:T.name},T.name,!1,{fileName:"D:/Projects/Cursor/Bracket Developer
+/src/components/Navbar.jsx",lineNumber:66,columnNumber:13},this))},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/components/Navbar.jsx",lineNumber:64,columnNumber:9},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Navbar.jsx"
+,lineNumber:63,columnNumber:7},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/components/Navbar.jsx",lineNumber:26,columnNumber:5},this)}const 
+U1=["Full-Stack Engineer","MERN & Laravel Specialist","Backend 
+Architect","UI/UX Implementer"],Hj=[{className:"badge-left-1",icon:Tj,label:"No
+de.js"},{className:"badge-right-1",icon:w1,label:"React.js"},{className:"badge-
+left-2",icon:cj,label:"Laravel"},{className:"badge-right-2",icon:M1,label:"Vue.
+js"},{className:"badge-left-3",icon:M1,label:"PHP"},{className:"badge-right-3",
+icon:Mh,label:"MySQL"},{className:"badge-left-4",icon:w1,label:"WordPress"},{cl
+assName:"badge-right-4",icon:Mh,label:"MongoDB"}];function Vj(){const[p,D]=ue.u
+seState(0),[O,E]=ue.useState(""),[R,H]=ue.useState(!1),[Y,T]=ue.useState(100);r
+eturn ue.useEffect(()=>{const J=U1[p],be=setTimeout(()=>{if(R){const ce=J.subst
+ring(0,O.length-1);E(ce),ce===""&&(H(!1),D(x=>(x+1)%U1.length),T(100))}else{con
+st ce=J.substring(0,O.length+1);E(ce),ce===J&&setTimeout(()=>H(!0),2e3)}T(R?50:
+100)},Y);return()=>clearTimeout(be)},[O,R,p,Y]),f.jsxDEV("section",{id:"home",c
+lassName:"hero-section",children:[f.jsxDEV("div",{className:"bg-grid"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Hero.jsx",l
+ineNumber:61,columnNumber:7},this),f.jsxDEV("div",{className:"glow-orb 
+orb-1"},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/component
+s/Hero.jsx",lineNumber:62,columnNumber:7},this),f.jsxDEV("div",{className:"glow
+-orb orb-2"},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/comp
+onents/Hero.jsx",lineNumber:63,columnNumber:7},this),f.jsxDEV("div",{className:
+"glow-orb orb-3"},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src
+/components/Hero.jsx",lineNumber:64,columnNumber:7},this),f.jsxDEV("div",{class
+Name:"hero-container",children:[f.jsxDEV("div",{className:"floating-icons-conta
+iner",children:Hj.map(({className:J,icon:be,label:ce})=>f.jsxDEV("div",{classNa
+me:`floating-badge ${J}`,children:[f.jsxDEV(be,{size:18},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Hero.jsx",l
+ineNumber:70,columnNumber:15},this),f.jsxDEV("span",{children:ce},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Hero.jsx",l
+ineNumber:71,columnNumber:15},this)]},ce,!0,{fileName:"D:/Projects/Cursor/Brack
+et 
+Developer/src/components/Hero.jsx",lineNumber:69,columnNumber:13},this))},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Hero.jsx",l
+ineNumber:67,columnNumber:9},this),f.jsxDEV("div",{className:"hero-content",chi
+ldren:[f.jsxDEV("h4",{className:"hero-tagline",children:"DEVELOPING SCALABLE 
+SOLUTIONS"},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/compo
+nents/Hero.jsx",lineNumber:77,columnNumber:11},this),f.jsxDEV("h1",{className:"
+hero-title",children:["Hi, I'm 
+",f.jsxDEV("span",{className:"highlight-text",children:"Mian Ammar 
+Salar"},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/components/Hero.jsx",lineNumber:79,columnNumber:26},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Hero.jsx",l
+ineNumber:78,columnNumber:11},this),f.jsxDEV("h2",{className:"hero-subtitle",ch
+ildren:["I am a ",f.jsxDEV("span",{className:"typed-text",children:O},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Hero.jsx",l
+ineNumber:82,columnNumber:20},this),f.jsxDEV("span",{className:"cursor",childre
+n:"|"},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/components/Hero.jsx",lineNumber:83,columnNumber:13},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Hero.jsx",l
+ineNumber:81,columnNumber:11},this),f.jsxDEV("p",{className:"hero-description",
+children:"I design and architect high-performance full-stack web applications, 
+combining rock-solid backend frameworks like Laravel and Node.js with modern, 
+responsive user interfaces."},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket D
+eveloper/src/components/Hero.jsx",lineNumber:85,columnNumber:11},this),f.jsxDEV
+("div",{className:"hero-actions",children:[f.jsxDEV("a",{href:"#projects",class
+Name:"btn btn-primary",children:"Explore Projects"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Hero.jsx",l
+ineNumber:91,columnNumber:13},this),f.jsxDEV("a",{href:"#contact",className:"bt
+n btn-secondary",children:"Let's Connect"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/components/Hero.jsx",lineNumber:94,columnNumber:13},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/components/Hero.jsx",lineNumber:90,columnNumber:11},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/components/Hero.jsx",lineNumber:76,columnNumber:9},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Hero.jsx",l
+ineNumber:66,columnNumber:7},this),f.jsxDEV("a",{href:"#about",className:"scrol
+l-indicator","aria-label":"Scroll to About Me 
+section",children:f.jsxDEV(GN,{size:22,className:"arrow-icon"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/components/Hero.jsx",lineNumber:102,columnNumber:9},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/components/Hero.jsx",lineNumber:101,columnNumber:7},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Hero.jsx",l
+ineNumber:60,columnNumber:5},this)}function Nr(p,D){return typeof 
+p=="string"&&p.startsWith("/"),p||"/api/portfolio"}const Lj=Nr("https://portfol
+io-vercel-deployment-nine.vercel.app/api/v1/portfolio"),jr="650736dbdd3d57a4328
+1f528751f060abb9276e51162ad84ae05aefdcf30cb89",qj=Nr("https://portfolio-vercel-
+deployment-nine.vercel.app/api/v1/portfolio/skills"),Yj=Nr("https://portfolio-v
+ercel-deployment-nine.vercel.app/api/v1/portfolio/projects"),Gj=Nr("https://por
+tfolio-vercel-deployment-nine.vercel.app/api/v1/portfolio/experiences"),Xj=Nr("
+https://portfolio-vercel-deployment-nine.vercel.app/api/v1/portfolio/contact");
+async function Qj(){try{const p=await fetch(`${Lj}/about`,{headers:{"x-admin-ap
+i-key":jr,"Content-Type":"application/json"}});if(!p.ok)throw new Error(`API 
+error: ${p.status}`);return await p.json()}catch(p){throw 
+console.error("Failed to fetch about data:",p),p}}function $j(p){const 
+D=(p==null?void 0:p.data)??(p==null?void 0:p.skills)??(p==null?void 
+0:p.skillsByCategory)??p;return D?Array.isArray(D)?D.reduce((O,E)=>{const 
+R=(E.category||"frontend").toLowerCase(),H=E.name||E.skill||"Unknown 
+Skill",Y=Number(E.level??E.proficiency??0);return 
+O[R]=O[R]??[],O[R].push({name:H,level:Y}),O},{}):D:null}async function 
+Zj(){const 
+p={"Content-Type":"application/json"};p["x-admin-api-key"]=jr;try{const 
+D=await fetch(qj,{headers:p});if(!D.ok)throw new Error(`API error: 
+${D.status}`);const O=await D.json();return $j(O)||O}catch(D){throw 
+console.error("Failed to fetch skills data:",D),D}}function Jj(p){const 
+D=(p==null?void 0:p.data)??p,O=(D==null?void 0:D.projects)??D;return 
+Array.isArray(O)?O.map(E=>{var J,be,ce,x,b;const R=(E.category||E.type||"fullst
+ack").toString().toLowerCase(),H=Array.isArray(E.tech)?E.tech:Array.isArray(E.t
+echnologies)?E.technologies:[],Y={github:((J=E.links)==null?void 
+0:J.github)??E.github??"",demo:((be=E.links)==null?void 
+0:be.demo)??E.demo??""},T={challenge:((ce=E.caseStudy)==null?void 
+0:ce.challenge)??E.challenge??"",solution:((x=E.caseStudy)==null?void 
+0:x.solution)??E.solution??"",metrics:((b=E.caseStudy)==null?void 0:b.metrics)?
+?E.metrics??""};return{id:E._id??E.id??E.title??`${R}-${Math.random()}`,title:E
+.title??"Untitled Project",category:R,description:E.description??E.summary??"",
+tech:H,links:Y,caseStudy:T}}):null}async function Pj(){var D;const 
+p={"Content-Type":"application/json"};p["x-admin-api-key"]=jr;try{const 
+O=await fetch(Yj,{headers:p});if(!O.ok)throw new Error(`API error: 
+${O.status}`);const E=await O.json();return Jj(E)||((D=E==null?void 
+0:E.data)==null?void 0:D.projects)||E}catch(O){throw console.error("Failed to 
+fetch projects data:",O),O}}function Kj(p){const D=(p==null?void 
+0:p.data)??p,O=(D==null?void 0:D.experiences)??(D==null?void 
+0:D.experience)??D;return Array.isArray(O)?O.map(E=>({id:E._id??E.id??`${E.comp
+any??E.role??"experience"}-${Math.random()}`,role:E.role??E.position??"Unknown 
+Role",company:E.company??E.organization??"Unknown Company",location:E.location?
+?E.place??"",period:E.period??E.duration??"",bullets:Array.isArray(E.bullets)?E
+.bullets:Array.isArray(E.responsibilities)?E.responsibilities:E.summary?[E.summ
+ary]:[],tech:Array.isArray(E.tech)?E.tech:Array.isArray(E.technologies)?E.techn
+ologies:[]})):null}async function Fj(){var D,O;const 
+p={"Content-Type":"application/json"};p["x-admin-api-key"]=jr;try{const 
+E=await fetch(Gj,{headers:p});if(!E.ok)throw new Error(`API error: 
+${E.status}`);const R=await E.json();return Kj(R)||((D=R==null?void 
+0:R.data)==null?void 0:D.experiences)||((O=R==null?void 0:R.data)==null?void 
+0:O.experience)||R}catch(E){throw console.error("Failed to fetch experiences 
+data:",E),E}}function Ij(p){const D=(p==null?void 0:p.data)??p;if(!D)return 
+null;const O=D.contact??D;return{title:O.title??D.title??"Let's 
+Connect",description:O.description??D.description??"I am currently open to 
+contracting opportunities, senior technical roles, or architectural 
+consultancies. Feel free to shoot over a message.",email:O.email??D.email??"mia
+nammarsalar@gmail.com",location:O.location??D.location??"Lahore, Pakistan 
+(Remote Friendly)",socials:Array.isArray(O.socials)?O.socials:Array.isArray(D.s
+ocials)?D.socials:[{name:"GitHub",url:"https://github.com/bracketdeveloper"},{n
+ame:"LinkedIn",url:"https://www.linkedin.com/in/mianammarsalar"}]}}async 
+function Wj(){var D;const 
+p={"Content-Type":"application/json"};p["x-admin-api-key"]=jr;try{const 
+O=await fetch(Xj,{headers:p});if(!O.ok)throw new Error(`API error: 
+${O.status}`);const E=await O.json();return Ij(E)||((D=E==null?void 
+0:E.data)==null?void 0:D.contact)||E}catch(O){throw console.error("Failed to 
+fetch contact data:",O),O}}const 
+eC={Calendar:L1,Briefcase:Uh,Users:wj,Wrench:X1};function tC(p){return p?Array.
+isArray(p.stats)&&p.stats.length>0?p.stats.map(D=>({label:D.label??D.name??"Sta
+t",value:`${D.value??D.count??""}`,icon:D.icon??D.iconName??"Briefcase"})):[{la
+bel:"Years 
+Experience",value:`${p.experienceYears??""}`,icon:"Calendar"},{label:"Projects 
+Built",value:`${p.projectsBuilt??""}`,icon:"Briefcase"},{label:"Happy 
+Clients",value:`${p.happyClients??""}`,icon:"Users"},{label:"Core Stack Techs",
+value:`${p.coreStack??""}`,icon:"Wrench"}].filter(D=>D.value):[]}function 
+nC(p){return p?p.split(/\n\s*\n/).map(D=>D.trim()).filter(Boolean):[]}function 
+aC(){var nt,ae,Se,At;const[p,D]=ue.useState(null),[O,E]=ue.useState(!0),[R,H]=u
+e.useState(null);ue.useEffect(()=>{(async()=>{try{E(!0);const Fe=await 
+Qj();D((Fe==null?void 
+0:Fe.data)??Fe??null),H(null)}catch(Fe){H(Fe.message||"Unable to load about 
+section."),D(null)}finally{E(!1)}})()},[]);const Y=tC(p),T=nC(p==null?void 
+0:p.description),J=p==null?void 0:p.profileImage,be=p==null?void 
+0:p.subtitle,ce=(p==null?void 0:p.heading)??(p==null?void 0:p.title)??"About 
+Me",x=(p==null?void 0:p.ctaText)??((nt=p==null?void 
+0:p.primaryAction)==null?void 0:nt.text),b=(p==null?void 
+0:p.ctaHref)??((ae=p==null?void 0:p.primaryAction)==null?void 
+0:ae.href)??"#contact",w=(p==null?void 0:p.downloadText)??((Se=p==null?void 
+0:p.secondaryAction)==null?void 0:Se.text),fe=(p==null?void 
+0:p.downloadHref)??((At=p==null?void 0:p.secondaryAction)==null?void 
+0:At.href);return O?f.jsxDEV("section",{id:"about",className:"section about-sec
+tion",children:[f.jsxDEV("h2",{className:"section-title",children:ce},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/About.jsx",
+lineNumber:80,columnNumber:9},this),f.jsxDEV("p",{style:{textAlign:"center",col
+or:"var(--text-muted)"},children:"Loading about content..."},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/components/About.jsx",lineNumber:81,columnNumber:9},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/About.jsx",
+lineNumber:79,columnNumber:7},this):R||!p?f.jsxDEV("section",{id:"about",classN
+ame:"section about-section",children:[f.jsxDEV("h2",{className:"section-title",
+children:ce},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/comp
+onents/About.jsx",lineNumber:89,columnNumber:9},this),f.jsxDEV("p",{style:{text
+Align:"center",color:"var(--text-muted)"},children:R??"No about data 
+available."},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/components/About.jsx",lineNumber:90,columnNumber:9},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/About.jsx",
+lineNumber:88,columnNumber:7},this):f.jsxDEV("section",{id:"about",className:"s
+ection about-section",children:[f.jsxDEV("h2",{className:"section-title",childr
+en:ce},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components
+/About.jsx",lineNumber:99,columnNumber:7},this),be&&f.jsxDEV("p",{className:"se
+ction-subtitle",children:be},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket De
+veloper/src/components/About.jsx",lineNumber:100,columnNumber:20},this),f.jsxDE
+V("div",{className:"about-grid",children:[Y.length>0&&f.jsxDEV("div",{className
+:"about-stats-panel",children:Y.map(qe=>{const Fe=typeof 
+qe.icon=="string"?eC[qe.icon]??Uh:qe.icon;return 
+f.jsxDEV("div",{className:"glass-card stat-card",children:[f.jsxDEV("div",{clas
+sName:"stat-icon-wrapper",children:f.jsxDEV(Fe,{size:22},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/About.jsx",
+lineNumber:110,columnNumber:21},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/About.jsx",
+lineNumber:109,columnNumber:19},this),f.jsxDEV("div",{className:"stat-value",ch
+ildren:qe.value},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/
+components/About.jsx",lineNumber:112,columnNumber:19},this),f.jsxDEV("div",{cla
+ssName:"stat-label",children:qe.label},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/About.jsx",
+lineNumber:113,columnNumber:19},this)]},`${qe.label}-${qe.value}`,!0,{fileName:
+"D:/Projects/Cursor/Bracket Developer/src/components/About.jsx",lineNumber:108,
+columnNumber:17},this)})},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Devel
+oper/src/components/About.jsx",lineNumber:104,columnNumber:11},this),f.jsxDEV("
+div",{className:"glass-card about-narrative-panel",children:[(p==null?void 0:p.
+sectionHeading)&&f.jsxDEV("h3",{className:"narrative-heading",children:p.sectio
+nHeading},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/compone
+nts/About.jsx",lineNumber:122,columnNumber:13},this),f.jsxDEV("div",{className:
+"about-narrative-content",children:[J&&f.jsxDEV("div",{className:"profile-img-c
+ontainer",children:f.jsxDEV("img",{src:J,alt:"Profile",className:"profile-img"}
+,void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/About
+.jsx",lineNumber:130,columnNumber:17},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/About.jsx",
+lineNumber:129,columnNumber:15},this),T.length>0&&T.map((qe,Fe)=>f.jsxDEV("p",{
+className:"narrative-paragraph",children:qe},Fe,!1,{fileName:"D:/Projects/Curso
+r/Bracket Developer/src/components/About.jsx",lineNumber:134,columnNumber:15},t
+his)),f.jsxDEV("div",{className:"narrative-clearfix"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/About.jsx",
+lineNumber:138,columnNumber:13},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/About.jsx",
+lineNumber:127,columnNumber:11},this),f.jsxDEV("div",{className:"narrative-acti
+ons",children:[x&&b&&f.jsxDEV("a",{href:b,className:"btn 
+btn-primary",children:x},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Develo
+per/src/components/About.jsx",lineNumber:143,columnNumber:15},this),w&&fe&&f.js
+xDEV("a",{href:fe,download:!0,className:"btn btn-secondary",style:{display:"inl
+ine-flex",alignItems:"center",gap:"8px",textDecoration:"none"},children:[f.jsxD
+EV(lj,{size:18},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/c
+omponents/About.jsx",lineNumber:154,columnNumber:17},this),w]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/About.jsx",
+lineNumber:148,columnNumber:15},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/About.jsx",
+lineNumber:141,columnNumber:11},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/About.jsx",
+lineNumber:120,columnNumber:9},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/About.jsx",
+lineNumber:102,columnNumber:7},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/components/About.jsx",lineNumber:98,columnNumber:5},this)}const 
+Bh=[{id:"frontend",name:"Frontend"},{id:"backend",name:"Backend & 
+APIs"},{id:"cloud",name:"Database & Web Services"},{id:"tools",name:"Tools & 
+DevOps"}],kh={frontend:[{name:"React.js & Hooks",level:92},{name:"Vue.js 
+Development",level:85},{name:"Tailwind CSS & 
+Bootstrap",level:90},{name:"jQuery & AJAX",level:82}],backend:[{name:"Laravel 
+Framework",level:94},{name:"Node.js & Express",level:90},{name:"RESTful APIs & 
+Integration",level:95},{name:"PHP Development",level:92},{name:"Java 
+(Automation & Reporting)",level:75}],cloud:[{name:"MySQL 
+Database",level:90},{name:"MongoDB NoSQL",level:85},{name:"WordPress 
+Customization",level:88},{name:"cPanel Hosting Admin",level:82},{name:"Website 
+Deployment",level:85}],tools:[{name:"Git & GitHub 
+Versioning",level:92},{name:"Linux System 
+Environments",level:80},{name:"GTmetrix Performance 
+Audit",level:85},{name:"Figma to Responsive HTML",level:90},{name:"Agile & 
+Scrum Collaboration",level:88}]},lC={frontend:q1,backend:Mh,cloud:KN,tools:X1};
+function oC(p){return Object.keys(p).map(D=>({id:D,name:D.charAt(0).toUpperCase
+()+D.slice(1)}))}function 
+uC(p){if(!p)return{skillTabs:Bh,skillsByCategory:kh};const D=(p==null?void 0:p.
+data)??p,O=D.skillsByCategory||(Array.isArray(D.categories)?D.categories.reduce
+((R,H)=>{const Y=(H.tabId||H.name||"frontend").toString().toLowerCase();return 
+R[Y]=(H.skills||[]).map(T=>({name:T.name||"Unknown Skill",level:Number(T.level?
+?T.proficiency??0)})),R},{}):Array.isArray(D)?D.reduce((R,H)=>{const 
+Y=(H.category||"frontend").toLowerCase();return 
+R[Y]=R[Y]??[],R[Y].push({name:H.name||H.skill||"Unknown Skill",level:Number(H.l
+evel??H.proficiency??0)}),R},{}):null),E=D.skillTabs||(Array.isArray(D.categori
+es)?D.categories.map(R=>({id:(R.tabId||R.name||"frontend").toString().toLowerCa
+se(),name:R.name||R.tabId||"Skill"})):O?oC(O):null);return{skillTabs:E&&E.lengt
+h?E:Bh,skillsByCategory:O||kh}}function iC(){const[p,D]=ue.useState("frontend")
+,[O,E]=ue.useState(Bh),[R,H]=ue.useState(kh),[Y,T]=ue.useState(!0),[J,be]=ue.us
+eState(null);ue.useEffect(()=>{(async()=>{try{T(!0);const b=await 
+Zj(),w=uC(b);E(w.skillTabs),H(w.skillsByCategory),D(fe=>{var nt;return 
+w.skillsByCategory[fe]?fe:((nt=w.skillTabs[0])==null?void 
+0:nt.id)||"frontend"}),be(null)}catch(b){be(b.message||"Failed to load 
+skills")}finally{T(!1)}})()},[]);const ce=R[p]??[];return 
+Y?f.jsxDEV("section",{id:"skills",className:"section skills-section",children:[
+f.jsxDEV("h2",{className:"section-title",children:"My Skills Matrix"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Skills.jsx"
+,lineNumber:110,columnNumber:9},this),f.jsxDEV("p",{className:"section-subtitle
+",children:"A deep dive into the technologies, framework suites, and system 
+tools that form my operational stack."},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Skills.jsx"
+,lineNumber:111,columnNumber:9},this),f.jsxDEV("p",{style:{textAlign:"center",c
+olor:"var(--text-muted)"},children:"Loading skills..."},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Skills.jsx"
+,lineNumber:115,columnNumber:9},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Skills.jsx"
+,lineNumber:109,columnNumber:7},this):f.jsxDEV("section",{id:"skills",className
+:"section skills-section",children:[f.jsxDEV("h2",{className:"section-title",ch
+ildren:"My Skills Matrix"},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Deve
+loper/src/components/Skills.jsx",lineNumber:122,columnNumber:7},this),f.jsxDEV(
+"p",{className:"section-subtitle",children:"A deep dive into the technologies, 
+framework suites, and system tools that form my operational stack."},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Skills.jsx"
+,lineNumber:123,columnNumber:7},this),J&&f.jsxDEV("p",{style:{textAlign:"center
+",color:"var(--danger)",marginBottom:"1rem"},children:"Could not load skills 
+from the API. Showing default skills."},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Skills.jsx"
+,lineNumber:129,columnNumber:9},this),f.jsxDEV("div",{className:"skills-tabs 
+glass-card",children:O.map(x=>{const b=lC[x.id]??q1;return 
+f.jsxDEV("button",{type:"button",onClick:()=>D(x.id),className:`tab-btn 
+${p===x.id?"active":""}`,children:[f.jsxDEV(b,{size:18},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Skills.jsx"
+,lineNumber:144,columnNumber:15},this),f.jsxDEV("span",{children:x.name},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Skills.jsx"
+,lineNumber:145,columnNumber:15},this)]},x.id,!0,{fileName:"D:/Projects/Cursor/
+Bracket Developer/src/components/Skills.jsx",lineNumber:138,columnNumber:13},th
+is)})},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components
+/Skills.jsx",lineNumber:134,columnNumber:7},this),f.jsxDEV("div",{className:"sk
+ills-grid",children:ce.map(x=>f.jsxDEV("div",{className:"glass-card skill-card"
+,children:[f.jsxDEV("div",{className:"skill-info",children:[f.jsxDEV("span",{cl
+assName:"skill-name",children:x.name},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Skills.jsx"
+,lineNumber:155,columnNumber:15},this),f.jsxDEV("span",{className:"skill-percen
+tage",children:[x.level,"%"]},void 0,!0,{fileName:"D:/Projects/Cursor/Bracket D
+eveloper/src/components/Skills.jsx",lineNumber:156,columnNumber:15},this)]},voi
+d 0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Skills.js
+x",lineNumber:154,columnNumber:13},this),f.jsxDEV("div",{className:"skill-progr
+ess-bar-track",children:f.jsxDEV("div",{className:"skill-progress-bar-fill",sty
+le:{width:`${x.level}%`}},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Devel
+oper/src/components/Skills.jsx",lineNumber:159,columnNumber:15},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Skills.jsx"
+,lineNumber:158,columnNumber:13},this)]},x.name,!0,{fileName:"D:/Projects/Curso
+r/Bracket Developer/src/components/Skills.jsx",lineNumber:153,columnNumber:11},
+this))},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/component
+s/Skills.jsx",lineNumber:151,columnNumber:7},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Skills.jsx"
+,lineNumber:121,columnNumber:5},this)}const 
+kn="https://github.com/bracketdeveloper",rC=[{id:12,title:"Enterprise ISP 
+Billing & Client Management System",category:"fullstack",description:"A 
+high-concurrency, enterprise-grade backend infrastructure engineered for a 
+prominent Dubai-based Internet Service Provider (ISP), automating subscriber 
+provisioning, real-time bandwidth usage tracking, multi-tier cyclic billing, 
+and automated revenue assurance pipelines.",tech:["PHP","MySQL","JavaScript","A
+JAX","Bootstrap","Chart.js","Linux Cron Jobs 
+Framework"],links:{github:kn,demo:""},caseStudy:{challenge:"Architecting a 
+bulletproof, zero-downtime operations engine capable of processing massive 
+data streams for thousands of concurrent subscribers, handling complex 
+overlapping billing cycles (weekly, fortnightly, monthly), calculating 
+bandwidth quotas dynamically, and mitigating payment delinquency through 
+automated escalations.",solution:"Developed an enterprise full-stack ISP 
+management platform leveraging an asynchronous, AJAX-driven core interface and 
+a highly optimized relational database matrix. Engineered automated background 
+workers via server cron daemons to compute usage metrics, dispatch real-time 
+billing notifications, and compile high-performance visual data feeds via 
+Chart.js for data-driven operations oversight.",metrics:"Automated 100% of 
+core ISP billing and customer tracking workflows, reduced administrative 
+invoice generation overhead by 95%, and dropped outstanding subscriber payment 
+delinquency by 35% within the first quarter of 
+deployment."}},{id:11,title:"VUK Player Development 
+System",category:"fullstack",description:"An advanced football sports 
+analytics and performance monitoring platform enabling clubs to evaluate, 
+benchmark, and compare individual players and entire squads across 
+comprehensive physical, physiological, and metabolic parameters using 
+interactive data visualizations.",tech:["PHP","JavaScript","Bootstrap","MySQL",
+"Chart.js"],links:{github:`${kn}/vuk`,demo:""},caseStudy:{challenge:"Aggregatin
+g complex, multi-disciplinary athletic metrics?ranging from linear speed and 
+biomechanical power to physiological blood biomarkers and VO? max data?into a 
+unified data schema that supports real-time, multi-entity comparisons without 
+UI lag or convoluted analytical views.",solution:"Engineered a full-stack 
+analytics engine utilizing a PHP backend paired with an optimized database 
+schema to process high-dimensional athletic profiles. Implemented an 
+interactive JavaScript charting interface wrapped in a clean Bootstrap UI to 
+render immediate intra-club and inter-club comparative 
+matrices.",metrics:"Transformed raw physiological test data into actionable 
+coaching insights instantly, reducing tactical athletic benchmarking overhead 
+by 80%."}},{id:10,title:"Manha Vogue POS",category:"fullstack",description:"A 
+comprehensive, custom Point of Sale (POS) system engineered specifically for 
+high-end retail jewelry management, streamlining real-time inventory tracking, 
+variant pricing, sales invoicing, and customer 
+records.",tech:["Laravel","PHP","MySQL","Vue.js","Tailwind 
+CSS","Alpine.js"],links:{github:kn,demo:""},caseStudy:{challenge:"Designing a 
+retail operations hub that handles intricate inventory variations unique to 
+the jewelry sector while maintaining a high-speed checkout 
+workflow.",solution:"Built a specialized full-stack POS application combining 
+a relational database schema for jewelry item tracking with a high-performance 
+sales interface and automated stock level adjustments.",metrics:"Cut retail 
+transaction processing speeds by 50% and established a 100% accurate, live 
+inventory tracking channel."}},{id:9,title:"BYM 
+TV",category:"fullstack",description:"An elite digital broadcasting and 
+video-on-demand platform enabling automated content aggregation from YouTube, 
+Vimeo, and Dailymotion alongside an admin-moderated user-generated video 
+publishing workflow.",tech:["Node.js","Express","MongoDB","React","YouTube 
+Data API","Vimeo API","Cloudinary"],links:{github:kn,demo:""},caseStudy:{challe
+nge:"Constructing a scalable entertainment hub capable of aggregating dynamic 
+multi-category video feeds via third-party media APIs while maintaining a 
+secure framework for community content uploads.",solution:"Developed a robust 
+full-stack streaming portal utilizing asynchronous integration with mainstream 
+video APIs and a protected user authentication layer with administrative 
+moderation.",metrics:"Established a fully self-sustaining digital media 
+ecosystem with zero overhead media delivery pipelines."}},{id:8,title:"Twilio 
+API Bulk SMS Sender",category:"fullstack",description:"A full-stack automated 
+communication utility enabling high-volume bulk SMS dispatch by parsing Excel 
+files and executing mass messaging pipelines through direct Twilio API 
+orchestration.",tech:["Node.js","Express","Twilio API","ExcelJS","JavaScript","
+MongoDB"],links:{github:kn,demo:""},caseStudy:{challenge:"Eliminating the 
+manual overhead of sending individual client notifications by building a 
+system that securely accepts dynamic Twilio credentials and processes large 
+contact lists without timeouts.",solution:"Developed a lightweight full-stack 
+application featuring an asynchronous file-upload pipeline that processes 
+spreadsheet arrays and streams API requests to the Twilio 
+gateway.",metrics:"Reduced text campaign coordination times from hours to 
+under two minutes."}},{id:7,title:"Optimized Body and 
+Mind",category:"fullstack",description:"A robust healthcare platform providing 
+a seamless online booking ecosystem for blood, vitamin, and hormone screening 
+packages, designed to bypass physical crowds and automate diagnostic 
+appointment 
+routing.",tech:["WordPress","PHP","MySQL","JavaScript","WooCommerce","Fluent 
+Forms API"],links:{github:kn,demo:"https://optimizedbodyandmind.co.uk/"},caseSt
+udy:{challenge:"Developing a secure, high-traffic medical booking solution to 
+shift patient registration and appointment scheduling from congested clinics 
+to a structured online pipeline during peak demand 
+periods.",solution:"Engineered a full-stack scheduling and patient intake web 
+application using an asynchronous time-slot allocation matrix with a secure 
+administration panel.",metrics:"Eliminated in-clinic booking bottlenecks, 
+resulting in a 60% acceleration in user intake."}},{id:5,title:"PCR Lab 
+Dubai",category:"fullstack",description:"A full-stack online PCR test booking 
+platform for PCRTEST.AE ? a DHA-approved facility in Dubai ? enabling 
+home/hotel test appointments with integrated online payments and an automated 
+admin panel.",tech:["Laravel","PHP","MySQL","Payment Gateway API","Email 
+Notifications"],links:{github:kn,demo:""},caseStudy:{challenge:"Building a 
+seamless end-to-end appointment booking flow from test selection and slot 
+reservation to secure online payments and real-time email 
+confirmations.",solution:"Developed a Laravel-powered full-stack application 
+with a public-facing booking portal and protected admin panel with dual 
+payment support.",metrics:"Reduced manual booking overhead by 70% and enabled 
+24/7 self-service appointment scheduling."}},{id:4,title:"Admin Dashboard 
+Systems",category:"fullstack",description:"A highly secure administrative 
+portal featuring dynamic business metrics visualizations, reports compilers, 
+and customizable user role 
+management.",tech:["React.js","Node.js","Express.js","MongoDB","JWT 
+Auth"],links:{github:kn,demo:""},caseStudy:{challenge:"Implementing secure 
+role-based access controls (RBAC) while compiling and visualizing dynamic 
+reporting charts from large database records.",solution:"Developed custom 
+express middlewares for JWT and role validations, combined with MongoDB 
+aggregation queries and React chart layers.",metrics:"Secured administrative 
+endpoints and reduced query aggregate response times to a swift 
+85ms."}},{id:2,title:"Fourmile Health CBD 
+Store",category:"fullstack",description:"A custom full-stack e-commerce store 
+with secure user checkout and inventory controls built to increase sales and 
+streamline product delivery.",tech:["Laravel","PHP","MySQL","cPanel","Payment G
+ateway"],links:{github:kn,demo:"https://fourmilehealth.com/"},caseStudy:{challe
+nge:"Building a robust, fully secure product listing, cart, and payment 
+processing system capable of handling secure client transaction requests 
+smoothly.",solution:"Developed a custom Laravel backend leveraging optimized 
+MySQL index schemas, transactional payment gateways, and session management to 
+secure checkouts.",metrics:"Reduced checkout abandonment rates by 25% and 
+accelerated database search latency under 60ms."}},{id:1,title:"Lahore 
+Qalandars Website",category:"frontend",description:"A high-performance 
+responsive web portal built for the Lahore Qalandars sports franchise, geared 
+towards maximizing user engagement and online brand 
+visibility.",tech:["React.js","Responsive Design","CSS Grid","SEO & Performance
+"],links:{github:kn,demo:"https://lahoreqalandars.com"},caseStudy:{challenge:"C
+reating a highly visually-appealing, animation-rich sports frontend that loads 
+rapidly on slower mobile networks and remains stable during live matches with 
+high user peaks.",solution:"Implemented responsive layouts with modern CSS 
+Grid and Flexbox, optimization of image assets, code splitting, and lazy 
+loading strategies to reduce cumulative layout shifts (CLS).",metrics:"Cut 
+mobile load time by 40% and elevated GTmetrix performance metrics to a solid A 
+rating."}},{id:3,title:"Milwaukee Academy 
+Website",category:"frontend",description:"An education-focused training and 
+program discovery website developed with user-friendly layouts and navigation, 
+boosting student enrollments.",tech:["WordPress","Figma to HTML","HTML5 & 
+CSS3","SEO"],links:{github:kn,demo:""},caseStudy:{challenge:"Translating Figma 
+designs of deep academic course architectures into fully interactive, 
+SEO-optimized, and clean layout patterns.",solution:"Created custom 
+lightweight templates, ensuring structural HTML semantics, and applied active 
+caching headers and CDNs to support high speed indexes.",metrics:"Achieved an 
+outstanding score on GTmetrix and pushed organic Google Search indexing 
+rankings up by 30%."}},{id:6,title:"Prime Home 
+Care",category:"frontend",description:"A highly accessible, senior-friendly 
+service booking platform built on WordPress for an eldercare provider, 
+featuring an optimized low-friction frontend and a full content management 
+dashboard for seamless 
+administration.",tech:["WordPress","PHP","MySQL","JavaScript","Tailwind 
+CSS","ARIA Accessibility"],links:{github:kn,demo:"https://primehomecare.uk/"},c
+aseStudy:{challenge:"Designing a digital touchpoint optimized for elderly 
+users with potential visual or cognitive impairments, while providing the 
+client with a flexible CMS.",solution:"Developed a custom full-stack 
+architecture on top of WordPress with large typography, high-contrast layouts, 
+and intuitive navigation.",metrics:"Achieved a 40% increase in self-service 
+booking completions among target elderly user demographics."}}],H1={all:"Show 
+All",fullstack:"Full Stack",frontend:"Frontend",backend:"Backend"};function 
+cC(p){const O=[...new Set(p.map(E=>(E.category||"other").toString().toLowerCase
+()))].sort((E,R)=>E==="fullstack"?-1:R==="fullstack"?1:E.localeCompare(R));retu
+rn[{id:"all",label:H1.all},...O.map(E=>({id:E,label:H1[E]??E.charAt(0).toUpperC
+ase()+E.slice(1)}))]}function sC(p){const D=(p==null?void 
+0:p.data)??p,O=(D==null?void 0:D.projects)??D;return 
+Array.isArray(O)?O.map(E=>{var J,be,ce,x,b;const R=(E.category||E.type||"fullst
+ack").toString().toLowerCase(),H=Array.isArray(E.tech)?E.tech:Array.isArray(E.t
+echnologies)?E.technologies:[],Y={github:((J=E.links)==null?void 
+0:J.github)??E.github??"",demo:((be=E.links)==null?void 
+0:be.demo)??E.demo??""},T={challenge:((ce=E.caseStudy)==null?void 
+0:ce.challenge)??E.challenge??"",solution:((x=E.caseStudy)==null?void 
+0:x.solution)??E.solution??"",metrics:((b=E.caseStudy)==null?void 0:b.metrics)?
+?E.metrics??""};return{id:E._id??E.id??E.title??`${R}-${Math.random()}`,title:E
+.title??"Untitled Project",category:R,description:E.description??E.summary??"",
+tech:H,links:Y,caseStudy:T}}):null}function fC(){const[p,D]=ue.useState("all"),
+[O,E]=ue.useState(null),[R,H]=ue.useState(rC),[Y,T]=ue.useState(!0),[J,be]=ue.u
+seState(null);ue.useEffect(()=>{(async()=>{try{T(!0);const w=await 
+Pj(),fe=sC(w);fe&&fe.length&&H(fe),be(null)}catch(w){be(w.message||"Failed to 
+load projects")}finally{T(!1)}})()},[]);const ce=ue.useMemo(()=>cC(R),[R]),x=ue
+.useMemo(()=>(p==="all"?[...R]:R.filter(w=>w.category===p)).sort((w,fe)=>w.cate
+gory==="fullstack"?-1:fe.category==="fullstack"?1:0),[p,R]);return 
+Y?f.jsxDEV("section",{id:"projects",className:"section projects-section",childr
+en:[f.jsxDEV("h2",{className:"section-title",children:"Selected 
+Projects"},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/compon
+ents/Projects.jsx",lineNumber:121,columnNumber:9},this),f.jsxDEV("p",{className
+:"section-subtitle",children:"A curated collection of full-stack engineering 
+applications built with optimal performance and clean design."},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:122,columnNumber:9},this),f.jsxDEV("p",{style:{textAlign:"center"
+,color:"var(--text-muted)"},children:"Loading projects..."},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:126,columnNumber:9},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:120,columnNumber:7},this):f.jsxDEV("section",{id:"projects",class
+Name:"section projects-section",children:[f.jsxDEV("h2",{className:"section-tit
+le",children:"Selected Projects"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:133,columnNumber:7},this),f.jsxDEV("p",{className:"section-subtit
+le",children:"A curated collection of full-stack engineering applications 
+built with optimal performance and clean design."},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:134,columnNumber:7},this),J&&f.jsxDEV("p",{style:{textAlign:"cent
+er",color:"var(--danger)",marginBottom:"1rem"},children:"Could not load 
+projects from the API. Showing default projects."},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:140,columnNumber:9},this),f.jsxDEV("div",{className:"filter-nav",
+children:ce.map(b=>f.jsxDEV("button",{type:"button",onClick:()=>D(b.id),classNa
+me:`filter-btn ${p===b.id?"active":""}`,children:b.label},b.id,!1,{fileName:"D:
+/Projects/Cursor/Bracket Developer/src/components/Projects.jsx",lineNumber:147,
+columnNumber:11},this))},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Develo
+per/src/components/Projects.jsx",lineNumber:145,columnNumber:7},this),f.jsxDEV(
+"div",{className:"projects-grid",children:x.map(b=>f.jsxDEV("div",{className:"g
+lass-card project-card",children:[f.jsxDEV("div",{className:"project-card-heade
+r",children:f.jsxDEV("span",{className:"project-category-tag",children:b.catego
+ry},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Pr
+ojects.jsx",lineNumber:162,columnNumber:15},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:161,columnNumber:13},this),f.jsxDEV("div",{className:"project-car
+d-body",children:[f.jsxDEV("h3",{className:"project-title",children:b.title},vo
+id 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects
+.jsx",lineNumber:165,columnNumber:15},this),f.jsxDEV("p",{className:"project-de
+sc",children:b.description},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Dev
+eloper/src/components/Projects.jsx",lineNumber:166,columnNumber:15},this),f.jsx
+DEV("div",{className:"project-tech-list",children:b.tech.map(w=>f.jsxDEV("span"
+,{className:"tech-badge",children:w},w,!1,{fileName:"D:/Projects/Cursor/Bracket
+ Developer/src/components/Projects.jsx",lineNumber:169,columnNumber:19},this))}
+,void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Proje
+cts.jsx",lineNumber:167,columnNumber:15},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:164,columnNumber:13},this),f.jsxDEV("div",{className:"project-car
+d-actions",children:[f.jsxDEV("button",{type:"button",onClick:()=>E(b),classNam
+e:"btn btn-secondary card-action-btn",children:[f.jsxDEV(B1,{size:16},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:181,columnNumber:17},this),"Case Study"]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:176,columnNumber:15},this),f.jsxDEV("div",{className:"project-lin
+ks-group",children:[f.jsxDEV("a",{href:b.links.github,target:"_blank",rel:"noop
+ener noreferrer",className:"icon-link","aria-label":"GitHub 
+Repository",children:f.jsxDEV(wh,{size:20},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:192,columnNumber:19},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:185,columnNumber:17},this),b.links.demo&&f.jsxDEV("a",{href:b.lin
+ks.demo,target:"_blank",rel:"noopener 
+noreferrer",className:"icon-link","aria-label":"Live 
+Demo",children:f.jsxDEV(z1,{size:20},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:202,columnNumber:21},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:195,columnNumber:19},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:184,columnNumber:15},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:175,columnNumber:13},this)]},b.id,!0,{fileName:"D:/Projects/Curso
+r/Bracket Developer/src/components/Projects.jsx",lineNumber:160,columnNumber:11
+},this))},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/compone
+nts/Projects.jsx",lineNumber:158,columnNumber:7},this),O&&f.jsxDEV("div",{class
+Name:"modal-overlay",onClick:()=>E(null),role:"presentation",children:f.jsxDEV(
+"div",{className:"glass-card modal-container",onClick:b=>b.stopPropagation(),ro
+le:"dialog","aria-modal":"true",children:[f.jsxDEV("button",{type:"button",onCl
+ick:()=>E(null),className:"modal-close-btn","aria-label":"Close Case Study 
+Modal",children:f.jsxDEV(G1,{size:24},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:225,columnNumber:15},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:219,columnNumber:13},this),f.jsxDEV("div",{className:"modal-conte
+nt",children:[f.jsxDEV("span",{className:"modal-category",children:O.category.t
+oUpperCase()},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/com
+ponents/Projects.jsx",lineNumber:228,columnNumber:15},this),f.jsxDEV("h3",{clas
+sName:"modal-title",children:O.title},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:229,columnNumber:15},this),f.jsxDEV("p",{className:"modal-intro",
+children:O.description},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Develop
+er/src/components/Projects.jsx",lineNumber:230,columnNumber:15},this),f.jsxDEV(
+"div",{className:"modal-sections",children:[f.jsxDEV("div",{className:"modal-se
+ction-block",children:[f.jsxDEV("div",{className:"section-block-title",children
+:[f.jsxDEV(zj,{size:18,className:"block-icon"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:234,columnNumber:21},this),f.jsxDEV("h4",{children:"The 
+Challenge"},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/compo
+nents/Projects.jsx",lineNumber:235,columnNumber:21},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:233,columnNumber:19},this),f.jsxDEV("p",{children:O.caseStudy.cha
+llenge},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/component
+s/Projects.jsx",lineNumber:237,columnNumber:19},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:232,columnNumber:17},this),f.jsxDEV("div",{className:"modal-secti
+on-block",children:[f.jsxDEV("div",{className:"section-block-title",children:[f
+.jsxDEV(fj,{size:18,className:"block-icon"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:241,columnNumber:21},this),f.jsxDEV("h4",{children:"The 
+Solution"},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/compon
+ents/Projects.jsx",lineNumber:242,columnNumber:21},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:240,columnNumber:19},this),f.jsxDEV("p",{children:O.caseStudy.sol
+ution},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components
+/Projects.jsx",lineNumber:244,columnNumber:19},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:239,columnNumber:17},this),f.jsxDEV("div",{className:"modal-secti
+on-block",children:[f.jsxDEV("div",{className:"section-block-title",children:[f
+.jsxDEV(B1,{size:18,className:"block-icon"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:248,columnNumber:21},this),f.jsxDEV("h4",{children:"Technical 
+Metrics"},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/compone
+nts/Projects.jsx",lineNumber:249,columnNumber:21},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:247,columnNumber:19},this),f.jsxDEV("div",{className:"metrics-box
+",children:f.jsxDEV("strong",{children:O.caseStudy.metrics},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:252,columnNumber:21},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:251,columnNumber:19},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:246,columnNumber:17},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:231,columnNumber:15},this),f.jsxDEV("div",{className:"modal-foote
+r-actions",children:[f.jsxDEV("a",{href:O.links.github,className:"btn 
+btn-secondary",children:[f.jsxDEV(wh,{size:18},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:258,columnNumber:19},this),"Source Code"]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:257,columnNumber:17},this),O.links.demo&&f.jsxDEV("a",{href:O.lin
+ks.demo,target:"_blank",rel:"noopener noreferrer",className:"btn 
+btn-primary",children:[f.jsxDEV(z1,{size:18},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:268,columnNumber:21},this),"Launch Live Demo"]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:262,columnNumber:19},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:256,columnNumber:15},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:227,columnNumber:13},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:213,columnNumber:11},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:212,columnNumber:9},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Projects.js
+x",lineNumber:132,columnNumber:5},this)}const dC=[{role:"Freelance Full Stack 
+Developer",company:"Bracket Developer",location:"Remote / 
+Freelance",period:"May 2020 ? Present",bullets:["Delivered custom web 
+development solutions and administrative dashboards for local and 
+international clients.","Developed dynamic, SEO-optimized business 
+applications using React.js, PHP, Laravel, and Node.js.","Managed complete 
+project lifecycles including requirements gathering, development, testing, 
+deployment, and maintenance.","Developed and customized WordPress websites for 
+e-commerce, healthcare, and education clients."],tech:["PHP","Laravel","MongoDB
+","Express","React.js","Node.js","WordPress","MySQL"]},{role:"Full Stack 
+Developer",company:"Jillani'z",location:"Sheffield, United",period:"June 2024 
+? Present",bullets:["Develop and maintain complex full-stack web applications 
+using JavaScript, PHP, Laravel, HTML, and CSS.","Build responsive and highly 
+interactive user interfaces utilizing modern React.js and Vue.js 
+frameworks.","Convert design wireframes (Figma/UI/UX) into fully functional, 
+mobile-responsive, and pixel-perfect web pages.","Design, architect, and 
+integrate robust RESTful APIs for web-based products and internal 
+systems.","Develop backend automation modules using Node.js and Java for 
+reporting, database triggers, and data processing.","Manage and optimize 
+deployments, hosting environments, server updates, and automated backups."],tec
+h:["React.js","Vue.js","Laravel","Node.js","MySQL"]},{role:"Software 
+Developer",company:"Sony UK Technology Centre",location:"United 
+Kingdom",period:"August 2023 ? May 2024",bullets:["Assisted in developing and 
+maintaining critical internal software tools and web-based solutions for 
+operational support.","Supported frontend updates and system functionality 
+enhancements using clean JavaScript, HTML5, and CSS3.","Participated in 
+end-to-end debugging, unit testing, and QA activities to guarantee system 
+stability and peak operational performance.","Collaborated with 
+multi-functional teams to resolve technical bugs and improve internal workflow 
+efficiency."],tech:["JavaScript","HTML5","CSS3","Bootstrap & CSS Grid","QA 
+Testing","Internal Tools"]}];function mC(){const[p,D]=ue.useState(dC),[O,E]=ue.
+useState(!0),[R,H]=ue.useState(null);return 
+ue.useEffect(()=>{(async()=>{try{E(!0);const T=await 
+Fj();Array.isArray(T)&&T.length&&D(T),H(null)}catch(T){H(T.message||"Failed to 
+load experience")}finally{E(!1)}})()},[]),O?f.jsxDEV("section",{id:"experience"
+,className:"section experience-section",children:[f.jsxDEV("h2",{className:"sec
+tion-title",children:"Professional Journey"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:33,columnNumber:9},this),f.jsxDEV("p",{className:"section-subti
+tle",children:"A chronological overview of my professional engineering 
+milestones, organizational achievements, and technical contributions."},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:34,columnNumber:9},this),f.jsxDEV("p",{style:{textAlign:"center
+",color:"var(--text-muted)"},children:"Loading experience..."},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:38,columnNumber:9},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:32,columnNumber:7},this):f.jsxDEV("section",{id:"experience",cl
+assName:"section experience-section",children:[f.jsxDEV("h2",{className:"sectio
+n-title",children:"Professional Journey"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:45,columnNumber:7},this),f.jsxDEV("p",{className:"section-subti
+tle",children:"A chronological overview of my professional engineering 
+milestones, organizational achievements, and technical contributions."},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:46,columnNumber:7},this),R&&f.jsxDEV("p",{style:{textAlign:"cen
+ter",color:"var(--danger)",marginBottom:"1rem"},children:"Could not load 
+experience from the API. Showing default experience."},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:52,columnNumber:9},this),f.jsxDEV("div",{className:"timeline-co
+ntainer",children:[f.jsxDEV("div",{className:"timeline-center-line"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:58,columnNumber:9},this),p.map((Y,T)=>f.jsxDEV("div",{className
+:`timeline-item ${T%2===0?"left":"right"}`,children:[f.jsxDEV("div",{className:
+"timeline-node",children:f.jsxDEV(Uh,{size:16},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:65,columnNumber:15},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:64,columnNumber:13},this),f.jsxDEV("div",{className:"glass-card
+ timeline-card",children:[f.jsxDEV("div",{className:"timeline-card-header",chil
+dren:[f.jsxDEV("span",{className:"timeline-period",children:[f.jsxDEV(L1,{size:
+14},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Ex
+perience.jsx",lineNumber:70,columnNumber:19},this),Y.period]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:69,columnNumber:17},this),f.jsxDEV("span",{className:"timeline-
+location",children:[f.jsxDEV(Y1,{size:14},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:74,columnNumber:19},this),Y.location]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:73,columnNumber:17},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:68,columnNumber:15},this),f.jsxDEV("h3",{className:"timeline-ro
+le",children:Y.role},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/
+src/components/Experience.jsx",lineNumber:78,columnNumber:15},this),f.jsxDEV("h
+4",{className:"timeline-company",children:Y.company},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:79,columnNumber:15},this),f.jsxDEV("ul",{className:"timeline-bu
+llet-list",children:Y.bullets.map((J,be)=>f.jsxDEV("li",{className:"timeline-bu
+llet-item",children:J},`${J}-${be}`,!1,{fileName:"D:/Projects/Cursor/Bracket De
+veloper/src/components/Experience.jsx",lineNumber:82,columnNumber:19},this))},v
+oid 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experie
+nce.jsx",lineNumber:80,columnNumber:15},this),f.jsxDEV("div",{className:"timeli
+ne-tech-badges",children:Y.tech.map(J=>f.jsxDEV("span",{className:"tech-badge",
+children:J},J,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components
+/Experience.jsx",lineNumber:89,columnNumber:19},this))},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:87,columnNumber:15},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:67,columnNumber:13},this)]},Y.id??Y.company??Y.role??T,!0,{file
+Name:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.jsx",lineN
+umber:60,columnNumber:11},this))]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:57,columnNumber:7},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Experience.
+jsx",lineNumber:44,columnNumber:5},this)}const hC={title:"Let's 
+Connect",description:"I am currently open to contracting opportunities, senior 
+technical roles, or architectural consultancies. Feel free to shoot over a 
+message.",email:"mianammarsalar@gmail.com",location:"Lahore, Pakistan (Remote F
+riendly)",socials:[{name:"GitHub",url:"https://github.com/bracketdeveloper"},{n
+ame:"LinkedIn",url:"https://www.linkedin.com/in/mianammarsalar"}]};function pC(
+){const[p,D]=ue.useState(hC),[O,E]=ue.useState({name:"",email:"",subject:"",mes
+sage:""}),[R,H]=ue.useState({}),[Y,T]=ue.useState(!1),[J,be]=ue.useState(!1),[c
+e,x]=ue.useState(!1),b=()=>{navigator.clipboard.writeText(p.email),x(!0),setTim
+eout(()=>x(!1),2e3)};ue.useEffect(()=>{(async()=>{try{const Se=await 
+Wj();D(Se)}catch(Se){console.error("Contact API failed:",Se)}})()},[]);const w=
+ae=>{const{name:Se,value:At}=ae.target;E(qe=>({...qe,[Se]:At})),R[Se]&&H(qe=>({
+...qe,[Se]:""}))},fe=()=>{const ae={};return O.name.trim()||(ae.name="Full 
+name is required"),O.email.trim()?/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(O.email)||(
+ae.email="Please provide a valid email format"):ae.email="Email address is 
+required",O.subject.trim()||(ae.subject="Subject line is 
+required"),O.message.trim()||(ae.message="Message content cannot be blank"),H(a
+e),Object.keys(ae).length===0},nt=ae=>{ae.preventDefault(),fe()&&(T(!0),setTime
+out(()=>{T(!1),be(!0),E({name:"",email:"",subject:"",message:""}),setTimeout(()
+=>be(!1),5e3)},2e3))};return 
+f.jsxDEV("section",{id:"contact",className:"section contact-section",children:[
+f.jsxDEV("h2",{className:"section-title",children:"Get In Touch"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:87,columnNumber:7},this),f.jsxDEV("p",{className:"section-subtitle
+",children:"Have an exciting engineering problem, an architectural challenge, 
+or a full-stack project idea? Let's talk."},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:88,columnNumber:7},this),f.jsxDEV("div",{className:"contact-grid",
+children:[f.jsxDEV("div",{className:"contact-details-panel glass-card",children
+:[f.jsxDEV("h3",{className:"contact-panel-title",children:p.title},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:95,columnNumber:11},this),f.jsxDEV("p",{className:"contact-panel-d
+esc",children:p.description},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket De
+veloper/src/components/Contact.jsx",lineNumber:96,columnNumber:11},this),f.jsxD
+EV("div",{className:"contact-items",children:[f.jsxDEV("div",{className:"contac
+t-info-item copyable",onClick:b,role:"presentation",children:[f.jsxDEV("div",{c
+lassName:"contact-info-icon",children:f.jsxDEV(gj,{size:20},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:101,columnNumber:17},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:100,columnNumber:15},this),f.jsxDEV("div",{className:"contact-info
+-text",children:[f.jsxDEV("span",{className:"info-label",children:"Direct 
+Email"},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/component
+s/Contact.jsx",lineNumber:104,columnNumber:17},this),f.jsxDEV("span",{className
+:"info-val",children:p.email},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket D
+eveloper/src/components/Contact.jsx",lineNumber:105,columnNumber:17},this)]},vo
+id 0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.
+jsx",lineNumber:103,columnNumber:15},this),f.jsxDEV("button",{type:"button",cla
+ssName:"copy-btn","aria-label":"Copy email address to clipboard",children:ce?f.
+jsxDEV("span",{className:"copied-text",children:"Copied!"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:108,columnNumber:27},this):f.jsxDEV(tj,{size:16},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:108,columnNumber:74},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:107,columnNumber:15},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:99,columnNumber:13},this),f.jsxDEV("div",{className:"contact-info-
+item",children:[f.jsxDEV("div",{className:"contact-info-icon",children:f.jsxDEV
+(Y1,{size:20},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/com
+ponents/Contact.jsx",lineNumber:114,columnNumber:17},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:113,columnNumber:15},this),f.jsxDEV("div",{className:"contact-info
+-text",children:[f.jsxDEV("span",{className:"info-label",children:"Location"},v
+oid 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact
+.jsx",lineNumber:117,columnNumber:17},this),f.jsxDEV("span",{className:"info-va
+l",children:p.location},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Develop
+er/src/components/Contact.jsx",lineNumber:118,columnNumber:17},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:116,columnNumber:15},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:112,columnNumber:13},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:98,columnNumber:11},this),f.jsxDEV("div",{className:"contact-socia
+ls-group",children:[f.jsxDEV("h4",{className:"socials-title",children:"Follow 
+My Engineering Work"},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer
+/src/components/Contact.jsx",lineNumber:124,columnNumber:13},this),f.jsxDEV("di
+v",{className:"socials-links",children:p.socials.map(ae=>{const 
+Se=ae.name.toLowerCase().includes("github")?f.jsxDEV(wh,{size:22},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:128,columnNumber:19},this):f.jsxDEV(mj,{size:22},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:130,columnNumber:19},this);return f.jsxDEV("a",{href:ae.url,classN
+ame:"social-icon-btn","aria-label":ae.name,target:"_blank",rel:"noopener 
+noreferrer",children:Se},ae.name,!1,{fileName:"D:/Projects/Cursor/Bracket Devel
+oper/src/components/Contact.jsx",lineNumber:133,columnNumber:19},this)})},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:125,columnNumber:13},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:123,columnNumber:11},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:94,columnNumber:9},this),f.jsxDEV("div",{className:"contact-form-p
+anel glass-card",children:J?f.jsxDEV("div",{className:"form-success-box",childr
+en:[f.jsxDEV(JN,{size:60,className:"success-icon animate-success"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:152,columnNumber:15},this),f.jsxDEV("h3",{className:"success-headi
+ng",children:"Message Dispatched!"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:153,columnNumber:15},this),f.jsxDEV("p",{className:"success-paragr
+aph",children:"Thank you for reaching out. I have received your message and 
+will get back to you within 24 hours."},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:154,columnNumber:15},this),f.jsxDEV("button",{type:"button",onClic
+k:()=>be(!1),className:"btn btn-primary",children:"Send Another Message"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:158,columnNumber:15},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:151,columnNumber:13},this):f.jsxDEV("form",{className:"contact-for
+m",onSubmit:nt,noValidate:!0,children:[f.jsxDEV("div",{className:"form-row",chi
+ldren:[f.jsxDEV("div",{className:"form-group",children:[f.jsxDEV("label",{htmlF
+or:"name",className:"form-label",children:"Full Name"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:166,columnNumber:19},this),f.jsxDEV("input",{type:"text",id:"name"
+,name:"name",value:O.name,onChange:w,className:`form-input 
+${R.name?"error":""}`,placeholder:"John Doe",disabled:Y},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:167,columnNumber:19},this),R.name&&f.jsxDEV("span",{className:"err
+or-message",children:[f.jsxDEV(Ys,{size:14},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:179,columnNumber:23},this),R.name]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:178,columnNumber:21},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:165,columnNumber:17},this),f.jsxDEV("div",{className:"form-group",
+children:[f.jsxDEV("label",{htmlFor:"email",className:"form-label",children:"Em
+ail Address"},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/com
+ponents/Contact.jsx",lineNumber:185,columnNumber:19},this),f.jsxDEV("input",{ty
+pe:"email",id:"email",name:"email",value:O.email,onChange:w,className:`form-inp
+ut ${R.email?"error":""}`,placeholder:"john@example.com",disabled:Y},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:186,columnNumber:19},this),R.email&&f.jsxDEV("span",{className:"er
+ror-message",children:[f.jsxDEV(Ys,{size:14},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:198,columnNumber:23},this),R.email]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:197,columnNumber:21},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:184,columnNumber:17},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:164,columnNumber:15},this),f.jsxDEV("div",{className:"form-group",
+children:[f.jsxDEV("label",{htmlFor:"subject",className:"form-label",children:"
+Subject"},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/compone
+nts/Contact.jsx",lineNumber:206,columnNumber:17},this),f.jsxDEV("input",{type:"
+text",id:"subject",name:"subject",value:O.subject,onChange:w,className:`form-in
+put ${R.subject?"error":""}`,placeholder:"Project Inquiry",disabled:Y},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:207,columnNumber:17},this),R.subject&&f.jsxDEV("span",{className:"
+error-message",children:[f.jsxDEV(Ys,{size:14},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:219,columnNumber:21},this),R.subject]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:218,columnNumber:19},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:205,columnNumber:15},this),f.jsxDEV("div",{className:"form-group",
+children:[f.jsxDEV("label",{htmlFor:"message",className:"form-label",children:"
+Your Message"},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/co
+mponents/Contact.jsx",lineNumber:226,columnNumber:17},this),f.jsxDEV("textarea"
+,{id:"message",name:"message",rows:5,value:O.message,onChange:w,className:`form
+-textarea ${R.message?"error":""}`,placeholder:"Tell me about your 
+project...",disabled:Y},void 0,!1,{fileName:"D:/Projects/Cursor/Bracket Develop
+er/src/components/Contact.jsx",lineNumber:227,columnNumber:17},this),R.message&
+&f.jsxDEV("span",{className:"error-message",children:[f.jsxDEV(Ys,{size:14},voi
+d 0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.j
+sx",lineNumber:239,columnNumber:21},this),R.message]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:238,columnNumber:19},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:225,columnNumber:15},this),f.jsxDEV("button",{type:"submit",classN
+ame:"btn btn-primary 
+submit-btn",disabled:Y,children:[Y?f.jsxDEV(pj,{size:18,className:"spin"},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:246,columnNumber:31},this):f.jsxDEV(Cj,{size:18},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:246,columnNumber:72},this),"Send Message"]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:245,columnNumber:15},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:163,columnNumber:13},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:149,columnNumber:9},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:93,columnNumber:7},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/components/Contact.jsx
+",lineNumber:86,columnNumber:5},this)}const yC={borderTop:"1px solid 
+var(--border-light)",padding:"40px 24px",background:"var(--bg-secondary)",posit
+ion:"relative",zIndex:2},gC={maxWidth:"1200px",margin:"0 auto",textAlign:"cente
+r"},vC={fontSize:"0.9rem",color:"var(--text-muted)",fontWeight:500};function bC
+(){const[p,D]=ue.useState(()=>localStorage.getItem("theme")||"dark");ue.useEffe
+ct(()=>{document.documentElement.setAttribute("data-theme",p),localStorage.setI
+tem("theme",p)},[p]);const O=new Date().getFullYear();return 
+f.jsxDEV(f.Fragment,{children:[f.jsxDEV(Uj,{theme:p,setTheme:D},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket Developer/src/App.jsx",lineNumber:44
+,columnNumber:7},this),f.jsxDEV("main",{children:[f.jsxDEV(Vj,{},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/App.jsx",lineNumber:46,columnNumber:9},this),f.jsxDEV(aC,{},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/App.jsx",lineNumber:47,columnNumber:9},this),f.jsxDEV(iC,{},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/App.jsx",lineNumber:48,columnNumber:9},this),f.jsxDEV(fC,{},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/App.jsx",lineNumber:49,columnNumber:9},this),f.jsxDEV(mC,{},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/App.jsx",lineNumber:50,columnNumber:9},this),f.jsxDEV(pC,{},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/App.jsx",lineNumber:51,columnNumber:9},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/App.jsx",lineNumber:45
+,columnNumber:7},this),f.jsxDEV("footer",{style:yC,children:f.jsxDEV("div",{sty
+le:gC,children:f.jsxDEV("p",{style:vC,children:["? ",O," Mian Ammar Salar. All 
+rights reserved. Designed with visual excellence and clean React 
+modules."]},void 0,!0,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/App.jsx",lineNumber:55,columnNumber:11},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/App.jsx",lineNumber:54,columnNumber:9},this)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/App.jsx",lineNumber:53,columnNumber:7},this)]},void 
+0,!0,{fileName:"D:/Projects/Cursor/Bracket Developer/src/App.jsx",lineNumber:43
+,columnNumber:5},this)}kN.createRoot(document.getElementById("root")).render(f.
+jsxDEV(ue.StrictMode,{children:f.jsxDEV(bC,{},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/main.jsx",lineNumber:8,columnNumber:5},void 0)},void 
+0,!1,{fileName:"D:/Projects/Cursor/Bracket 
+Developer/src/main.jsx",lineNumber:7,columnNumber:3},void 0));
+
+
