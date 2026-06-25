@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
-import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
+import Projects from './components/Projects';
 
 const footerStyle = {
   borderTop: '1px solid var(--border-light)',
@@ -40,15 +41,21 @@ export default function App() {
   const year = new Date().getFullYear();
 
   return (
-    <>
+    <Router>
       <Navbar theme={theme} setTheme={setTheme} />
       <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Experience />
-        <Contact />
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Hero />
+              <About />
+              <Skills />
+              <Experience />
+              <Contact />
+            </>
+          } />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
       </main>
       <footer style={footerStyle}>
         <div style={footerInnerStyle}>
@@ -58,6 +65,6 @@ export default function App() {
           </p>
         </div>
       </footer>
-    </>
+    </Router>
   );
 }

@@ -8,7 +8,7 @@ import {
   X,
 } from 'lucide-react';
 import { projects as defaultProjects } from '../data/projects';
-import { fetchProjects } from '../utils/api';
+import { fetchProjects } from '../services/api';
 
 const categoryLabels = {
   all: 'Show All',
@@ -117,7 +117,7 @@ export default function Projects() {
 
   if (loading) {
     return (
-      <section id="projects" className="section projects-section">
+      <section className="section projects-section">
         <h2 className="section-title">Selected Projects</h2>
         <p className="section-subtitle">
           A curated collection of full-stack engineering applications built with
@@ -129,7 +129,7 @@ export default function Projects() {
   }
 
   return (
-    <section id="projects" className="section projects-section">
+    <section className="section projects-section">
       <h2 className="section-title">Selected Projects</h2>
       <p className="section-subtitle">
         A curated collection of full-stack engineering applications built with
