@@ -1,44 +1,8 @@
-import { useEffect, useState } from 'react';
 import { Briefcase, Calendar, MapPin } from 'lucide-react';
 import { experience as defaultExperience } from '../data/experience';
-import { fetchExperiences } from '../utils/api';
 
 export default function Experience() {
-  const [experienceData, setExperienceData] = useState(defaultExperience);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    const loadExperience = async () => {
-      try {
-        setLoading(true);
-        const result = await fetchExperiences();
-        if (Array.isArray(result) && result.length) {
-          setExperienceData(result);
-        }
-        setError(null);
-      } catch (err) {
-        setError(err.message || 'Failed to load experience');
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    loadExperience();
-  }, []);
-
-  if (loading) {
-    return (
-      <section id="experience" className="section experience-section">
-        <h2 className="section-title">Professional Journey</h2>
-        <p className="section-subtitle">
-          A chronological overview of my professional engineering milestones,
-          organizational achievements, and technical contributions.
-        </p>
-        <p style={{ textAlign: 'center', color: 'var(--text-muted)' }}>Loading experience...</p>
-      </section>
-    );
-  }
+  const experienceData = defaultExperience;
 
   return (
     <section id="experience" className="section experience-section">
@@ -47,12 +11,6 @@ export default function Experience() {
         A chronological overview of my professional engineering milestones,
         organizational achievements, and technical contributions.
       </p>
-
-      {error && (
-        <p style={{ textAlign: 'center', color: 'var(--danger)', marginBottom: '1rem' }}>
-          Could not load experience from the API. Showing default experience.
-        </p>
-      )}
 
       <div className="timeline-container">
         <div className="timeline-center-line" />

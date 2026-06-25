@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import {
   AlertCircle,
   CheckCircle,
@@ -10,7 +10,6 @@ import {
   MapPin,
   Send,
 } from 'lucide-react';
-import { fetchContact } from '../utils/api';
 
 const defaultContactData = {
   title: "Let's Connect",
@@ -25,7 +24,7 @@ const defaultContactData = {
 };
 
 export default function Contact() {
-  const [contactData, setContactData] = useState(defaultContactData);
+  const [contactData] = useState(defaultContactData);
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' });
   const [errors, setErrors] = useState({});
   const [submitting, setSubmitting] = useState(false);
@@ -37,19 +36,6 @@ export default function Contact() {
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
-
-  useEffect(() => {
-    const loadContact = async () => {
-      try {
-        const result = await fetchContact();
-        setContactData(result);
-      } catch (err) {
-        console.error('Contact API failed:', err);
-      }
-    };
-
-    loadContact();
-  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;

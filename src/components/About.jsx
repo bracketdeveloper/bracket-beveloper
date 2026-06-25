@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
-import { Briefcase, Calendar, Download, Users, Wrench } from 'lucide-react';
-import { fetchAbout } from '../utils/api';
+import { useEffect, useState } from "react";
+import { Briefcase, Calendar, Download, Users, Wrench } from "lucide-react";
+import { fetchAbout } from "../services/api";
 
 const iconMap = {
   Calendar,
@@ -9,13 +9,13 @@ const iconMap = {
   Wrench,
 };
 
-
 const defaultStats = [
-  { label: 'Years Experience', value: '5+', icon: 'Calendar' },
-  { label: 'Projects Built', value: '25+', icon: 'Briefcase' },
-  { label: 'Happy Clients', value: '20+', icon: 'Users' },
-  { label: 'Core Stack Techs', value: '12+', icon: 'Wrench' },
+  { label: "Years Experience", value: "5+", icon: "Calendar" },
+  { label: "Projects Built", value: "25+", icon: "Briefcase" },
+  { label: "Happy Clients", value: "20+", icon: "Users" },
+  { label: "Core Stack Techs", value: "12+", icon: "Wrench" },
 ];
+
 export default function About() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -26,7 +26,9 @@ export default function About() {
       try {
         setLoading(true);
         const result = await fetchAbout();
-        setData(result?.data ?? null);
+        // Assuming your API returns { id, experience_years, ... }
+        // Directly set the result if it's the object, or result.data if wrapped
+        setData(result ?? null);
         setError(null);
       } catch (err) {
         setError(err.message);
@@ -41,30 +43,44 @@ export default function About() {
 
   const stats = data
     ? [
-        { label: 'Years Experience', value: `${data.experienceYears}+`, icon: 'Calendar' },
-        { label: 'Projects Built', value: `${data.projectsBuilt}+`, icon: 'Briefcase' },
-        { label: 'Happy Clients', value: `${data.happyClients}+`, icon: 'Users' },
-        { label: 'Core Stack Techs', value: `${data.coreStack}+`, icon: 'Wrench' },
+        {
+          label: "Years Experience",
+          value: `${data.experience_years}+`,
+          icon: "Calendar",
+        },
+        {
+          label: "Projects Built",
+          value: `${data.projects_built}+`,
+          icon: "Briefcase",
+        },
+        {
+          label: "Happy Clients",
+          value: `${data.happy_clients}+`,
+          icon: "Users",
+        },
+        {
+          label: "Core Stack Techs",
+          value: `${data.core_stack_count}+`,
+          icon: "Wrench",
+        },
       ]
     : defaultStats;
 
   const narrative = data
     ? {
-        profileImage: '/profile_pic.png',
+        profileImage: "/profile_pic.png",
         paragraphs: data.description
-          ? data.description.split(/\n\s*\n/).map((paragraph) => paragraph.trim())
-          : [
-              'Hi, I\'m Mian Ammar Salar. I am a results-driven Software Engineer and Full Stack Developer with experience designing, developing, and maintaining scalable web applications using JavaScript, PHP, Node.js, React.js, Vue.js, and Laravel.',
-              'My professional journey includes building user-centric software solutions at Jillani\'z, supporting frontend enhancements and operational tool workflows at the Sony UK Technology Centre, and executing high-impact freelance projects for international clients. I specialize in converting Figma designs to responsive interfaces, integrating RESTful APIs, and implementing robust backend logic.',
-              'I have a strong understanding of the software development lifecycle (SDLC) and excel in collaborative Agile environments. I am dedicated to writing clean, maintainable, and reusable code, troubleshooting complex bugs, and ensuring peak site performance and cross-browser stability.',
-            ],
+          ? data.description
+              .split(/\n\s*\n/)
+              .map((paragraph) => paragraph.trim())
+          : ["No description available."],
       }
     : {
-        profileImage: '/profile_pic.png',
+        profileImage: "/profile_pic.png",
         paragraphs: [
-          'Hi, I\'m Mian Ammar Salar. I am a results-driven Software Engineer and Full Stack Developer with experience designing, developing, and maintaining scalable web applications using JavaScript, PHP, Node.js, React.js, Vue.js, and Laravel.',
-          'My professional journey includes building user-centric software solutions at Jillani\'z, supporting frontend enhancements and operational tool workflows at the Sony UK Technology Centre, and executing high-impact freelance projects for international clients. I specialize in converting Figma designs to responsive interfaces, integrating RESTful APIs, and implementing robust backend logic.',
-          'I have a strong understanding of the software development lifecycle (SDLC) and excel in collaborative Agile environments. I am dedicated to writing clean, maintainable, and reusable code, troubleshooting complex bugs, and ensuring peak site performance and cross-browser stability.',
+          "Hi, I'm Mian Ammar Salar. I am a results-driven Software Engineer and Full Stack Developer with experience designing, developing, and maintaining scalable web applications using JavaScript, PHP, Node.js, React.js, Vue.js, and Laravel.",
+          "My professional journey includes building user-centric software solutions at Jillani'z, supporting frontend enhancements and operational tool workflows at the Sony UK Technology Centre, and executing high-impact freelance projects for international clients. I specialize in converting Figma designs to responsive interfaces, integrating RESTful APIs, and implementing robust backend logic.",
+          "I have a strong understanding of the software development lifecycle (SDLC) and excel in collaborative Agile environments. I am dedicated to writing clean, maintainable, and reusable code, troubleshooting complex bugs, and ensuring peak site performance and cross-browser stability.",
         ],
       };
 
@@ -72,7 +88,9 @@ export default function About() {
     return (
       <section id="about" className="section about-section">
         <h2 className="section-title">About Me</h2>
-        <p style={{ textAlign: 'center', color: 'var(--text-muted)' }}>Loading...</p>
+        <p style={{ textAlign: "center", color: "var(--text-muted)" }}>
+          Loading...
+        </p>
       </section>
     );
   }
@@ -88,7 +106,8 @@ export default function About() {
       <div className="about-grid">
         <div className="about-stats-panel">
           {stats.map((stat) => {
-            const IconComponent = typeof stat.icon === 'string' ? iconMap[stat.icon] : stat.icon;
+            const IconComponent =
+              typeof stat.icon === "string" ? iconMap[stat.icon] : stat.icon;
             return (
               <div key={stat.label} className="glass-card stat-card">
                 <div className="stat-icon-wrapper">
@@ -103,7 +122,8 @@ export default function About() {
 
         <div className="glass-card about-narrative-panel">
           <h3 className="narrative-heading">
-            My Journey as a <span className="highlight">Full-Stack Developer</span>
+            My Journey as a{" "}
+            <span className="highlight">Full-Stack Developer</span>
           </h3>
 
           <div className="about-narrative-content">
@@ -130,7 +150,12 @@ export default function About() {
               href="/cv.pdf"
               download="Mian_Ammar_Salar_CV.pdf"
               className="btn btn-secondary"
-              style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', textDecoration: 'none' }}
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "8px",
+                textDecoration: "none",
+              }}
             >
               <Download size={18} />
               Download Resume

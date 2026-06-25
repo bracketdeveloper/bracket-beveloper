@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 import {
   AlertTriangle,
   ExternalLink,
@@ -8,7 +8,6 @@ import {
   X,
 } from 'lucide-react';
 import { projects as defaultProjects } from '../data/projects';
-import { fetchProjects } from '../services/api';
 
 const categoryLabels = {
   all: 'Show All',
@@ -18,7 +17,10 @@ const categoryLabels = {
 };
 
 function getProjectFilters(projects) {
-  const categories = [...new Set(projects.map((project) => (project.category || 'other').toString().toLowerCase()))];
+  const categories = [...new Set(projects.map((project) =>
+    (project.category || 'other').toString().toLowerCase()
+  ))];
+
   const ordered = categories.sort((a, b) => {
     if (a === 'fullstack') return -1;
     if (b === 'fullstack') return 1;
@@ -29,78 +31,19 @@ function getProjectFilters(projects) {
     { id: 'all', label: categoryLabels.all },
     ...ordered.map((category) => ({
       id: category,
-      label: categoryLabels[category] ?? category.charAt(0).toUpperCase() + category.slice(1),
+      label:
+        categoryLabels[category] ??
+        category.charAt(0).toUpperCase() + category.slice(1),
     })),
   ];
-}
-
-function normalizeProjectsData(payload) {
-  const data = payload?.data ?? payload;
-  const rawProjects = data?.projects ?? data;
-
-  if (!Array.isArray(rawProjects)) {
-    return null;
-  }
-
-  return rawProjects.map((project) => {
-    const category = (project.category || project.type || 'fullstack').toString().toLowerCase();
-    const tech = Array.isArray(project.tech)
-      ? project.tech
-      : Array.isArray(project.technologies)
-      ? project.technologies
-      : [];
-
-    const links = {
-      github: project.links?.github ?? project.github ?? '',
-      demo: project.links?.demo ?? project.demo ?? '',
-    };
-
-    const caseStudy = {
-      challenge: project.caseStudy?.challenge ?? project.challenge ?? '',
-      solution: project.caseStudy?.solution ?? project.solution ?? '',
-      metrics: project.caseStudy?.metrics ?? project.metrics ?? '',
-    };
-
-    return {
-      id: project._id ?? project.id ?? project.title ?? `${category}-${Math.random()}`,
-      title: project.title ?? 'Untitled Project',
-      category,
-      description: project.description ?? project.summary ?? '',
-      tech,
-      links,
-      caseStudy,
-    };
-  });
 }
 
 export default function Projects() {
   const [filter, setFilter] = useState('all');
   const [modalProject, setModalProject] = useState(null);
-  const [projects, setProjects] = useState(defaultProjects);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
 
-  useEffect(() => {
-    const loadProjects = async () => {
-      try {
-        setLoading(true);
-        const result = await fetchProjects();
-        const normalized = normalizeProjectsData(result);
-
-        if (normalized && normalized.length) {
-          setProjects(normalized);
-        }
-
-        setError(null);
-      } catch (err) {
-        setError(err.message || 'Failed to load projects');
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    loadProjects();
-  }, []);
+  // use default data directly
+  const projects = defaultProjects;
 
   const filters = useMemo(() => getProjectFilters(projects), [projects]);
 
@@ -115,32 +58,13 @@ export default function Projects() {
     );
   }, [filter, projects]);
 
-  if (loading) {
-    return (
-      <section className="section projects-section">
-        <h2 className="section-title">Selected Projects</h2>
-        <p className="section-subtitle">
-          A curated collection of full-stack engineering applications built with
-          optimal performance and clean design.
-        </p>
-        <p style={{ textAlign: 'center', color: 'var(--text-muted)' }}>Loading projects...</p>
-      </section>
-    );
-  }
-
   return (
     <section className="section projects-section">
       <h2 className="section-title">Selected Projects</h2>
       <p className="section-subtitle">
         A curated collection of full-stack engineering applications built with
-        optimal performance and clean design.
+        clean design.
       </p>
-
-      {error && (
-        <p style={{ textAlign: 'center', color: 'var(--danger)', marginBottom: '1rem' }}>
-          Could not load projects from the API. Showing default projects.
-        </p>
-      )}
 
       <div className="filter-nav">
         {filters.map((f) => (
@@ -159,11 +83,15 @@ export default function Projects() {
         {filtered.map((project) => (
           <div key={project.id} className="glass-card project-card">
             <div className="project-card-header">
-              <span className="project-category-tag">{project.category}</span>
+              <span className="project-category-tag">
+                {project.category}
+              </span>
             </div>
+
             <div className="project-card-body">
               <h3 className="project-title">{project.title}</h3>
               <p className="project-desc">{project.description}</p>
+
               <div className="project-tech-list">
                 {project.tech.map((tech) => (
                   <span key={tech} className="tech-badge">
@@ -172,6 +100,7 @@ export default function Projects() {
                 ))}
               </div>
             </div>
+
             <div className="project-card-actions">
               <button
                 type="button"
@@ -181,23 +110,23 @@ export default function Projects() {
                 <Target size={16} />
                 Case Study
               </button>
+
               <div className="project-links-group">
                 <a
                   href={project.links.github}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="icon-link"
-                  aria-label="GitHub Repository"
                 >
                   <Github size={20} />
                 </a>
+
                 {project.links.demo && (
                   <a
                     href={project.links.demo}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="icon-link"
-                    aria-label="Live Demo"
                   >
                     <ExternalLink size={20} />
                   </a>
@@ -209,43 +138,50 @@ export default function Projects() {
       </div>
 
       {modalProject && (
-        <div className="modal-overlay" onClick={() => setModalProject(null)} role="presentation">
+        <div
+          className="modal-overlay"
+          onClick={() => setModalProject(null)}
+        >
           <div
             className="glass-card modal-container"
             onClick={(e) => e.stopPropagation()}
-            role="dialog"
-            aria-modal="true"
           >
             <button
               type="button"
               onClick={() => setModalProject(null)}
               className="modal-close-btn"
-              aria-label="Close Case Study Modal"
             >
               <X size={24} />
             </button>
+
             <div className="modal-content">
-              <span className="modal-category">{modalProject.category.toUpperCase()}</span>
+              <span className="modal-category">
+                {modalProject.category.toUpperCase()}
+              </span>
+
               <h3 className="modal-title">{modalProject.title}</h3>
               <p className="modal-intro">{modalProject.description}</p>
+
               <div className="modal-sections">
                 <div className="modal-section-block">
                   <div className="section-block-title">
-                    <AlertTriangle size={18} className="block-icon" />
+                    <AlertTriangle size={18} />
                     <h4>The Challenge</h4>
                   </div>
                   <p>{modalProject.caseStudy.challenge}</p>
                 </div>
+
                 <div className="modal-section-block">
                   <div className="section-block-title">
-                    <Lightbulb size={18} className="block-icon" />
+                    <Lightbulb size={18} />
                     <h4>The Solution</h4>
                   </div>
                   <p>{modalProject.caseStudy.solution}</p>
                 </div>
+
                 <div className="modal-section-block">
                   <div className="section-block-title">
-                    <Target size={18} className="block-icon" />
+                    <Target size={18} />
                     <h4>Technical Metrics</h4>
                   </div>
                   <div className="metrics-box">
@@ -253,11 +189,16 @@ export default function Projects() {
                   </div>
                 </div>
               </div>
+
               <div className="modal-footer-actions">
-                <a href={modalProject.links.github} className="btn btn-secondary">
+                <a
+                  href={modalProject.links.github}
+                  className="btn btn-secondary"
+                >
                   <Github size={18} />
                   Source Code
                 </a>
+
                 {modalProject.links.demo && (
                   <a
                     href={modalProject.links.demo}
@@ -266,7 +207,7 @@ export default function Projects() {
                     className="btn btn-primary"
                   >
                     <ExternalLink size={18} />
-                    Launch Live Demo
+                    Live Demo
                   </a>
                 )}
               </div>
