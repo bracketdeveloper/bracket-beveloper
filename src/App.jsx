@@ -1,70 +1,60 @@
 import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Skills from './components/Skills';
-import Experience from './components/Experience';
-import Contact from './components/Contact';
-import Projects from './components/Projects';
+// ... other imports
 
-const footerStyle = {
-  borderTop: '1px solid var(--border-light)',
-  padding: '40px 24px',
-  background: 'var(--bg-secondary)',
-  position: 'relative',
-  zIndex: 2,
-};
-
-const footerInnerStyle = {
-  maxWidth: '1200px',
-  margin: '0 auto',
-  textAlign: 'center',
-};
-
-const footerTextStyle = {
-  fontSize: '0.9rem',
-  color: 'var(--text-muted)',
-  fontWeight: 500,
-};
+// Simple Maintenance Component
+const MaintenancePage = () => (
+  <div style={{ 
+    display: 'flex', 
+    justifyContent: 'center', 
+    alignItems: 'center', 
+    height: '100vh', 
+    textAlign: 'center',
+    background: 'var(--bg-primary)',
+    color: 'var(--text-primary)'
+  }}>
+    <div>
+      <h1>Site Under Construction</h1>
+      <p>We are currently integrating new backend features. Check back soon!</p>
+    </div>
+  </div>
+);
 
 export default function App() {
-  const [theme, setTheme] = useState(
-    () => localStorage.getItem('theme') || 'dark'
-  );
+  const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'dark');
+  
+  // ADD THIS LINE: Toggle this to 'false' when you are done
+  const [maintenanceMode, setMaintenanceMode] = useState(true);
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
   }, [theme]);
 
-  const year = new Date().getFullYear();
-
   return (
     <Router>
-      <Navbar theme={theme} setTheme={setTheme} />
-      <main>
-        <Routes>
-          <Route path="/" element={
-            <>
-              <Hero />
-              <About />
-              <Skills />
-              <Experience />
-              <Contact />
-            </>
-          } />
-          <Route path="/projects" element={<Projects />} />
-        </Routes>
-      </main>
-      <footer style={footerStyle}>
-        <div style={footerInnerStyle}>
-          <p style={footerTextStyle}>
-            © {year} Mian Ammar Salar. All rights reserved. Designed with visual
-            excellence and clean React modules.
-          </p>
-        </div>
-      </footer>
+      {maintenanceMode ? (
+        <MaintenancePage />
+      ) : (
+        <>
+          <Navbar theme={theme} setTheme={setTheme} />
+          <main>
+            <Routes>
+              <Route path="/" element={
+                <>
+                  <Hero />
+                  <About />
+                  <Skills />
+                  <Experience />
+                  <Contact />
+                </>
+              } />
+              <Route path="/projects" element={<Projects />} />
+            </Routes>
+          </main>
+          {/* Footer code here */}
+        </>
+      )}
     </Router>
   );
 }
