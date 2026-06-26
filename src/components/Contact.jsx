@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {
   AlertCircle,
   CheckCircle,
@@ -8,14 +8,17 @@ import {
   Loader2,
   Mail,
   MapPin,
+  Phone,
   Send,
 } from 'lucide-react';
+import { fetchContact } from "../services/api";
 
 const defaultContactData = {
   title: "Let's Connect",
   description:
     'I am currently open to contracting opportunities, senior technical roles, or architectural consultancies. Feel free to shoot over a message.',
   email: 'mianammarsalar@gmail.com',
+  phone: '+92 315 7907337',
   location: 'Lahore, Pakistan (Remote Friendly)',
   socials: [
     { name: 'GitHub', url: 'https://github.com/bracketdeveloper' },
@@ -24,12 +27,47 @@ const defaultContactData = {
 };
 
 export default function Contact() {
-  const [contactData] = useState(defaultContactData);
+  const [contactData, setContactData] = useState(defaultContactData);
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' });
   const [errors, setErrors] = useState({});
   const [submitting, setSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
   const [copied, setCopied] = useState(false);
+
+  useEffect(() => {
+    const loadData = async () => {
+      try {
+        const response = await fetchContact();
+
+        console.log("API RESPONSE:", response);
+
+        const res = response?.data || response;
+
+        if (res && (res.email || res.phone)) {
+          setContactData({
+            ...defaultContactData,
+            email: res.email ?? defaultContactData.email,
+            phone: res.phone ?? defaultContactData.phone,
+            location: res.location ?? defaultContactData.location,
+            socials: [
+              {
+                name: 'GitHub',
+                url: res.github_url ?? defaultContactData.socials[0].url,
+              },
+              {
+                name: 'LinkedIn',
+                url: res.linkedin_url ?? defaultContactData.socials[1].url,
+              },
+            ],
+          });
+        }
+      } catch (err) {
+        console.error("API failed, using fallback:", err);
+      }
+    };
+
+    loadData();
+  }, []);
 
   const copyEmail = () => {
     navigator.clipboard.writeText(contactData.email);
@@ -90,9 +128,19 @@ export default function Contact() {
                 <span className="info-label">Direct Email</span>
                 <span className="info-val">{contactData.email}</span>
               </div>
-              <button type="button" className="copy-btn" aria-label="Copy email address to clipboard">
+              <button type="button" className="copy-btn">
                 {copied ? <span className="copied-text">Copied!</span> : <Copy size={16} />}
               </button>
+            </div>
+
+            <div className="contact-info-item">
+              <div className="contact-info-icon">
+                <Phone size={20} />
+              </div>
+              <div className="contact-info-text">
+                <span className="info-label">Phone Number</span>
+                <span className="info-val">{contactData.phone}</span>
+              </div>
             </div>
 
             <div className="contact-info-item">
@@ -120,7 +168,6 @@ export default function Contact() {
                     key={social.name}
                     href={social.url}
                     className="social-icon-btn"
-                    aria-label={social.name}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -149,83 +196,56 @@ export default function Contact() {
             <form className="contact-form" onSubmit={handleSubmit} noValidate>
               <div className="form-row">
                 <div className="form-group">
-                  <label htmlFor="name" className="form-label">Full Name</label>
+                  <label className="form-label">Full Name</label>
                   <input
                     type="text"
-                    id="name"
                     name="name"
                     value={form.name}
                     onChange={handleChange}
                     className={`form-input ${errors.name ? 'error' : ''}`}
-                    placeholder="John Doe"
                     disabled={submitting}
                   />
-                  {errors.name && (
-                    <span className="error-message">
-                      <AlertCircle size={14} />
-                      {errors.name}
-                    </span>
-                  )}
+                  {errors.name && <span className="error-message">{errors.name}</span>}
                 </div>
+
                 <div className="form-group">
-                  <label htmlFor="email" className="form-label">Email Address</label>
+                  <label className="form-label">Email Address</label>
                   <input
                     type="email"
-                    id="email"
                     name="email"
                     value={form.email}
                     onChange={handleChange}
                     className={`form-input ${errors.email ? 'error' : ''}`}
-                    placeholder="john@example.com"
                     disabled={submitting}
                   />
-                  {errors.email && (
-                    <span className="error-message">
-                      <AlertCircle size={14} />
-                      {errors.email}
-                    </span>
-                  )}
+                  {errors.email && <span className="error-message">{errors.email}</span>}
                 </div>
               </div>
 
               <div className="form-group">
-                <label htmlFor="subject" className="form-label">Subject</label>
+                <label className="form-label">Subject</label>
                 <input
                   type="text"
-                  id="subject"
                   name="subject"
                   value={form.subject}
                   onChange={handleChange}
                   className={`form-input ${errors.subject ? 'error' : ''}`}
-                  placeholder="Project Inquiry"
                   disabled={submitting}
                 />
-                {errors.subject && (
-                  <span className="error-message">
-                    <AlertCircle size={14} />
-                    {errors.subject}
-                  </span>
-                )}
+                {errors.subject && <span className="error-message">{errors.subject}</span>}
               </div>
 
               <div className="form-group">
-                <label htmlFor="message" className="form-label">Your Message</label>
+                <label className="form-label">Your Message</label>
                 <textarea
-                  id="message"
                   name="message"
                   rows={5}
                   value={form.message}
                   onChange={handleChange}
                   className={`form-textarea ${errors.message ? 'error' : ''}`}
-                  placeholder="Tell me about your project..."
                   disabled={submitting}
                 />
-                {errors.message && (
-                  <span className="error-message">
-                    <AlertCircle size={14} />
-                    {errors.message}
-                  </span>
-                )}
+                {errors.message && <span className="error-message">{errors.message}</span>}
               </div>
 
               <button type="submit" className="btn btn-primary submit-btn" disabled={submitting}>

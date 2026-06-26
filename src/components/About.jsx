@@ -16,25 +16,32 @@ const defaultStats = [
   { label: "Core Stack Techs", value: "12+", icon: "Wrench" },
 ];
 
+const defaultNarrative = {
+  profileImage: "/profile_pic.png",
+  paragraphs: [
+    "Hi, I'm Mian Ammar Salar. I am a results-driven Software Engineer and Full Stack Developer with experience designing, developing, and maintaining scalable web applications using JavaScript, PHP, Node.js, React.js, Vue.js, and Laravel.",
+    "My professional journey includes building user-centric software solutions at Jillani'z, supporting frontend enhancements and operational tool workflows at the Sony UK Technology Centre, and executing high-impact freelance projects for international clients. I specialize in converting Figma designs to responsive interfaces, integrating RESTful APIs, and implementing robust backend logic.",
+    "I have a strong understanding of the software development lifecycle (SDLC) and excel in collaborative Agile environments. I am dedicated to writing clean, maintainable, and reusable code, troubleshooting complex bugs, and ensuring peak site performance and cross-browser stability.",
+  ],
+};
+
 export default function About() {
   const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
     const loadAboutData = async () => {
       try {
-        setLoading(true);
-        const result = await fetchAbout();
-        // Assuming your API returns { id, experience_years, ... }
-        // Directly set the result if it's the object, or result.data if wrapped
-        setData(result ?? null);
-        setError(null);
+        const response = await fetchAbout();
+
+        console.log("ABOUT API RESPONSE:", response);
+
+        const res = response?.data || response;
+
+        if (res) {
+          setData(res);
+        }
       } catch (err) {
-        setError(err.message);
-        setData(null);
-      } finally {
-        setLoading(false);
+        console.error("API failed, using fallback:", err);
       }
     };
 
@@ -45,22 +52,30 @@ export default function About() {
     ? [
         {
           label: "Years Experience",
-          value: `${data.experience_years}+`,
+          value: data.experience_years
+            ? `${data.experience_years}+`
+            : defaultStats[0].value,
           icon: "Calendar",
         },
         {
           label: "Projects Built",
-          value: `${data.projects_built}+`,
+          value: data.projects_built
+            ? `${data.projects_built}+`
+            : defaultStats[1].value,
           icon: "Briefcase",
         },
         {
           label: "Happy Clients",
-          value: `${data.happy_clients}+`,
+          value: data.happy_clients
+            ? `${data.happy_clients}+`
+            : defaultStats[2].value,
           icon: "Users",
         },
         {
           label: "Core Stack Techs",
-          value: `${data.core_stack_count}+`,
+          value: data.core_stack_count
+            ? `${data.core_stack_count}+`
+            : defaultStats[3].value,
           icon: "Wrench",
         },
       ]
@@ -72,28 +87,10 @@ export default function About() {
         paragraphs: data.description
           ? data.description
               .split(/\n\s*\n/)
-              .map((paragraph) => paragraph.trim())
-          : ["No description available."],
+              .map((p) => p.trim())
+          : defaultNarrative.paragraphs,
       }
-    : {
-        profileImage: "/profile_pic.png",
-        paragraphs: [
-          "Hi, I'm Mian Ammar Salar. I am a results-driven Software Engineer and Full Stack Developer with experience designing, developing, and maintaining scalable web applications using JavaScript, PHP, Node.js, React.js, Vue.js, and Laravel.",
-          "My professional journey includes building user-centric software solutions at Jillani'z, supporting frontend enhancements and operational tool workflows at the Sony UK Technology Centre, and executing high-impact freelance projects for international clients. I specialize in converting Figma designs to responsive interfaces, integrating RESTful APIs, and implementing robust backend logic.",
-          "I have a strong understanding of the software development lifecycle (SDLC) and excel in collaborative Agile environments. I am dedicated to writing clean, maintainable, and reusable code, troubleshooting complex bugs, and ensuring peak site performance and cross-browser stability.",
-        ],
-      };
-
-  if (loading) {
-    return (
-      <section id="about" className="section about-section">
-        <h2 className="section-title">About Me</h2>
-        <p style={{ textAlign: "center", color: "var(--text-muted)" }}>
-          Loading...
-        </p>
-      </section>
-    );
-  }
+    : defaultNarrative;
 
   return (
     <section id="about" className="section about-section">
@@ -108,6 +105,7 @@ export default function About() {
           {stats.map((stat) => {
             const IconComponent =
               typeof stat.icon === "string" ? iconMap[stat.icon] : stat.icon;
+
             return (
               <div key={stat.label} className="glass-card stat-card">
                 <div className="stat-icon-wrapper">
@@ -134,11 +132,13 @@ export default function About() {
                 className="profile-img"
               />
             </div>
-            {narrative.paragraphs?.map((paragraph, index) => (
+
+            {narrative.paragraphs.map((paragraph, index) => (
               <p key={index} className="narrative-paragraph">
                 {paragraph}
               </p>
             ))}
+
             <div className="narrative-clearfix" />
           </div>
 
@@ -146,6 +146,7 @@ export default function About() {
             <a href="#contact" className="btn btn-primary">
               Work With Me
             </a>
+
             <a
               href="/cv.pdf"
               download="Mian_Ammar_Salar_CV.pdf"

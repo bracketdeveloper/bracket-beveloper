@@ -8,6 +8,13 @@ export const fetchAbout = async () => {
   return await response.json();
 };
 
+export const fetchContact = async () => {
+  const response = await fetch(`${API_BASE_URL}/contact`);
+  if (!response.ok) {
+    throw new Error('Failed to fetch contact data');
+  }
+  return await response.json();
+};
 export const fetchProjects = async () => {
   const response = await fetch(`${API_BASE_URL}/projects`);
   if (!response.ok) {
