@@ -30,6 +30,14 @@ export const fetchExperience = async () => {
   }
   return await response.json();
 };
+
+export const fetchSkillsTabs = async () => {
+  const response = await fetch(`${API_BASE_URL}/skill-categories`);
+  if (!response.ok) {
+    throw new Error("Failed to fetch skill categories");
+  }
+  return await response.json();
+};
 export const fetchSkills = async () => {
   const response = await fetch(`${API_BASE_URL}/skills`);
   if (!response.ok) {
